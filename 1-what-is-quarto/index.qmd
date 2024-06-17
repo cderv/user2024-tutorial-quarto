@@ -1,0 +1,18 @@
+---
+title: "Quarto: An evolution of R Markdown?"
+author: ""
+date: ""
+format: html
+---
+
+## Diapos
+
+{{< fa tv >}} [Open slides in full screen](1-what-is-quarto.html)
+
+```{=html}
+<iframe class="slide-deck" src="1-what-is-quarto.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercises
+
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/simple-document.qmd">{{< fa download >}} `simple-document.qmd`</i></a>
