@@ -1,0 +1,21 @@
+Setting up your environment:
+
+- Download and install the latest versions of R, RStudio and Quarto:
+
+  - A recent version of R (4.4 or higher):
+    
+  - The latest version of RStudio (`2024.04.2-764` or higher):
+    
+  - The latest version of Quarto (`1.4.555` or higher):
+    
+
+- Install the following packages:
+
+  ``` r
+  # For the exercises (dplyr and ggplot2 should be sufficient if you don't want the entire tidyverse)
+  pkg_list <- c("rmarkdown", "palmerpenguins", "gt", "tidyverse") 
+  # R base
+  install.packages(pkg_list)
+  # or using pak
+  pak::pkg_install(pkg_list)
+  ```

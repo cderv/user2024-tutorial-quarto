@@ -1,0 +1,15 @@
+project:
+  type: website
+  render: 
+    - index.qmd
+    - preparation.qmd
+  output-dir: _site-pretuto
+
+website:
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: preparation.qmd
+        text: Pre-Tuto Instructions
+

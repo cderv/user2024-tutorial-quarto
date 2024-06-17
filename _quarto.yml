@@ -1,0 +1,60 @@
+project:
+  type: website
+  resources: 
+    - exercises.zip
+    - correction-exemples.zip
+
+website:
+  page-navigation: true
+  title: "Enhancing scientific publishing through Quarto"
+  description: Tutorial at useR 2024
+
+  open-graph: true
+  twitter-card:
+    creator: "@chrisderv"
+
+  sidebar:
+    background: "#FDC538"
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/cderv/tuto-quarto-user-2024
+        text: "GitHub Repo"
+    style: docked
+    search: true
+    collapse-level: 2
+
+  page-footer:
+    right: "Website built and published with [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2024, Christophe Dervieux"
+    background: "#FDC538"
+
+lang: en
+author: "Christophe Dervieux"
+date: "2023-06-21"
+
+revealjs-plugins:
+  - attribution
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+  clean-revealjs:
+    preview-links: auto
+    theme: [default, ../reveal-style.scss]
+    transition: fade
+    chalkboard: true
+    footer: "[🔗 cderv.quarto.pub/tuto-quarto-useR2024](https://cderv.quarto.pub/tuto-quarto-user2024)"
+
+execute:
+  freeze: auto
+
+editor: visual
+
+profile: 
+  group: 
+    - [tuto, pretuto]

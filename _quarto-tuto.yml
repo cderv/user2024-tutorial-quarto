@@ -1,0 +1,29 @@
+project:
+  type: website
+  render: 
+    - "*.qmd"
+    - "!exercices/"
+    - "!exemples-correction/"
+
+website:
+  repo-url: https://github.com/cderv/tuto-quarto-user-2024
+  repo-actions: [edit, issue]
+
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: preparation.qmd
+        text: Pre-Tuto Instructions
+      - text: ---
+      - href: 1-what-is-quarto/index.qmd
+        text: "What is Quarto?"
+      - href: 2-rmd-quarto/index.qmd
+        text: "From Rmd to Qmd"
+      - href: 3-projects/index.qmd
+        text: Working in projects
+      - href: 4-summary/index.qmd
+        text: Summary
+      - href: 5-more/index.qmd
+        text: Doing more...
+

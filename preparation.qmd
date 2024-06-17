@@ -1,0 +1,110 @@
+---
+title : "Pre-tutorial instructions"
+subtitle: Getting ready for D-Day
+format: html
+author: ""
+date: last-modified
+---
+
+::: callout-tip
+
+## Need help before the tutorial in Salzburg ?
+
+Christophe will be around on Monday 8th July in the morning - you can reach out to meet if you have any problems to share ahead of the tutorial. 
+
+He can be contacted beforehand - See profile at [@cderv](https://github.com/cderv).
+
+:::
+
+Before the tutorial, please follow these steps:
+
+## Before coming
+
+{{< include _pre-tutorial-config.qmd >}}
+
+{{< include _pre-tutorial-files.qmd >}}
+
+::: {.callout-tip}
+
+# Advice
+
+Create a dedicated folder on your environment for the tutorial to store the exercises, your notes and to be able to do the exercises in a healthy environment.
+
+**Don't create an RStudio folder because we'll be creating different projects for the exercises, and creating RStudio sub-projects doesn't work well.**
+
+Example of organization: 
+
+```
+> tuto-quarto-user-2024
+|-- notes/
+|-- exercises/
+  |-- rstudio-project1/
+  |-- quarto-project1/
+|-- README.md (to note the context of these files)
+```
+:::
+
+## What you need to know (or revise) to feel at ease
+
+Assumption for the tutorial: You know R Markdown and you know Markdown syntax.
+
+- Markdown syntax for Pandoc
+    - This is the same as R Markdown:   
+        <https://bookdown.org/yihui/rmarkdown/markdown-syntax.html>
+
+    - It is also documented on Quarto website:  
+        <https://quarto.org/docs/authoring/markdown-basics.html>
+
+- Include R code with **knitr**
+    - R code chunks:  
+        <https://bookdown.org/yihui/rmarkdown/r-code.html>
+
+    - What is an R Markdown file?  
+        <https://bookdown.org/yihui/rmarkdown-cookbook/rmarkdown-anatomy.html>
+
+## Check your setup
+
+Here are a few tips for checking your installation if you've installed quarto yourself:
+
+* `quarto check install` must operate without error 
+  ```powershell
+  $ quarto check install
+
+  Quarto 1.4.555
+  [>] Checking Quarto installation......OK
+        Version: 1.4.555
+        Path: C:\Users\chris\scoop\apps\quarto\current\bin
+        CodePage: 1252
+
+  [>] Checking tools....................OK
+        TinyTeX: v2024.03.13
+        Chromium: 869685
+
+  [>] Checking LaTeX....................OK
+        Using: TinyTex
+        Path: C:\Users\chris\AppData\Roaming\TinyTeX\bin\windows\
+        Version: 2024
+
+  [>] Checking basic markdown render....OK
+   ```
+
+   It is better if you have TinyTeX installed to work with Quarto (<https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex>), but not mandatory of the tutorial 
+
+* `quarto check knitr` must work without error 
+  ```powershell
+  $ quarto check knitr
+
+  Quarto 1.4.555
+  (-) Checking R installation...........
+
+  [>] Checking R installation...........OK
+        Version: 4.4.0
+        Path: C:/PROGRA~1/R/R-44~1.0
+        LibPaths:
+          - C:/Users/chris/AppData/Local/R/win-library/4.4
+          - C:/Program Files/R/R-4.4.0/library
+        knitr: 1.47
+        rmarkdown: 2.27
+
+  [>] Checking Knitr engine render......OK
+  ```

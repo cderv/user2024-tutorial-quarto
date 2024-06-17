@@ -1,0 +1,17 @@
+---
+title: 'Tutorial: Get Started with Quarto - useR 2024 - Salzburg'
+format: gfm
+output-file: README.md
+---
+
+This repository contains the source code of the website used for the tutorial resources, available at https://cderv.github.io/tuto-quarto-user-2024/
+
+##  To be ready and do the exercises
+
+{{< include _pre-tutorial-config.qmd >}}
+
+{{< include _pre-tutorial-files.qmd >}}
+
+## Licence
+
+{{< include _license.qmd >}}
