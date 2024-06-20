@@ -1,0 +1,203 @@
+---
+title: "Quarto projects for advanced content"
+subtitle: "Enhancing scientific publishing through Quarto"
+institute: "Posit"
+author: "Christophe Dervieux"
+date: "2024-07-08"
+format: clean-revealjs
+code-line-numbers: false
+editor: visual
+lightbox: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+options(width = 65)
+
+library(countdown)
+```
+
+## Projet Quarto ?
+
+Quarto projects are **directories** that provide :
+
+::: incremental
+* a way to `render` all or part of the files in a directory using a single command (for example, `quarto render myproject`).
+* A means of sharing YAML configuration between several documents.
+* The ability to redirect output artifacts to another directory.
+* The ability to freeze rendering (i.e. not re-run documents unless they have changed).
+:::
+
+## We've already created a project...
+
+A project is a directory with a `_quarto.yml`, no matter how simple.
+
+``` {.yaml filename="_quarto.yml"}
+project:
+  title: "Quarto-101"
+```
+
+![](images/quarto-project.png){fig-alt="Files panel in RStudio showing my-doc.qmd and _quarto.yml."}
+
+
+But projects can have special "types" that introduce additional behavior (for example, websites or books).
+
+## Quarto Website
+
+- Arbitrary depth and organization of content
+- Multi-level navigation (navigation bar / sidebar / hybrid)
+- Full-text search (client-side or Algolia)
+- Freeze calculation results (`freeze` configuration)
+
+## Quarto Website
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="|2|4-5|6-10|12-15"}
+project:
+  type: website
+
+website:
+  title: "today"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+```
+
+::: aside
+Example: <https://quarto.org> and more in the [Gallery](https://quarto.org/docs/gallery/#websites)
+:::
+
+## Quarto Blogs
+
+:::: columns
+
+::: column
+
+- Inherits Quarto site functionalities (navigation, search, etc.)
+
+- Automatically generated list and RSS feeds
+
+- Customizable home page (inspired by the R package [postcards](https://github.com/seankross/postcards))
+
+:::
+
+::: aside
+Examples: <https://quarto.org/docs/blog/> and more in the [Gallery](https://quarto.org/docs/gallery/#websites)
+:::
+
+::: {.column .make-smaller}
+```{.yaml filename="index.qmd (website with posts/)"}
+---
+title: "myblog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+---
+```
+<br> 
+```{.yaml filename="posts/first-post/index.qmd"}
+---
+title: "Post With Code"
+description: "Post description"
+author: "Fizz McPhee"
+date: "5/22/2021"
+categories:
+  - news
+  - code
+---
+```
+:::
+::::
+
+## {background-image=images/screenshot-blog.png}
+
+## Quarto Books
+
+- Inherits Quarto site functionalities (navigation, search, etc.)
+- Supports cross-referencing between chapters
+- Output formats include HTML, PDF, MS Word and ePub.
+
+::: aside
+Examples: <https://quarto.org/docs/gallery/#books>
+:::
+
+## Quarto Books
+
+```{.yaml filename="_quarto.yml" code-line-numbers="|2|4-5|8-12|14|16-22"}
+project:
+  type: book
+
+book:
+  title: "mybook"
+  author: "Jane Doe"
+  date: "8/18/2021"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
+  epub:
+    cover-image: cover.png
+```
+
+##  {background-image="images/screenshot-book-hopr.png"}
+
+## And much more...
+
+- [Metadata shared by subfolder](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata) with `_metadata.yml`
+- [Run scripts before and after `quarto render` (_Project Scripts_)](https://quarto.org/docs/projects/scripts.html)
+- [Creation of customized item lists](https://quarto.org/docs/websites/website-listings-custom.html)
+- ...
+
+## Your turn! 
+
+```{r}
+#| echo: false
+countdown(minutes = 10)
+```
+
+::: {.callout}
+
+# Turn your project into a website
+
+1. Add an `index.qmd` to your existing `Quarto-101` project. 
+2. Modify the `_quarto.yml` to make a website
+3. `quarto preview` to see your website evolve
+4. Add navigation to display your `new-penguins.qmd` report in a submenu of the `navbar`.
+5. Customize your website! 
+:::
+
+::: callout-tip
+
+## Learn to navigate in the doc!
+
+Use the Quarto documentation on the `website` type to play with the options: <https://quarto.org/docs/websites/>
+:::
+
+# Questions ?
+
+::: fragment
+Let's recap...
+
+[[Next]{.button}](/4-synthese/)
+:::
+
+
