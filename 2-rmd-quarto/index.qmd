@@ -1,0 +1,26 @@
+---
+title: "From Rmd to Qmd"
+author: ""
+date: ""
+format: html
+---
+
+## Diapos
+
+{{< fa tv >}} [Open slides full screen](2-rmd-quarto.html)
+
+```{=html}
+<iframe class="slide-deck" src="2-rmd-quarto.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
+## Exercices
+
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/quarto-101.zip">{{< fa download >}} `quarto-101.zip`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.qmd">{{< fa download >}} `penguins.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/new-penguins.qmd">{{< fa download >}} `new-penguins.qmd`</i></a>
+
+## Exemples Correction / Démo
+
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-pdf-demo.qmd">{{< fa download >}} `new-penguins-pdf-demo.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-pdf-demo-typst.qmd">{{< fa download >}} `new-penguins-pdf-demo-typst.qmd`</i></a>

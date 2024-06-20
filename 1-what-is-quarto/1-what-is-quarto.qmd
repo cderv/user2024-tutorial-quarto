@@ -356,27 +356,6 @@ How it works => The **quarto** R {{< fa box >}} call `quarto` CLI from R through
 | Dashboards       | [flexdashboard](https://pkgs.rstudio.com/flexdashboard/)                     | [Quarto Dashboards](https://quarto.org/docs/dashboards/)                    |
 +------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 
-# Wrap up
-
-## What about R Markdown?
-
-::: incremental
--   You can render existing R Markdown documents with Quarto and you can rename them to `.qmd` files to turn them into Quarto documents.
-
--   You don't have to do this -- R Markdown continues to be maintained.
-
--   However, Quarto
-
-    -   Offers "batteries included" shared syntax across formats
-
-    -   Allows you to choose your own editor and your preferred data science language
-
-    -   Comes with richer features out of the box
-
-    -   Is actively developed
-:::
-
-
 ## Let's try it! 
 
 ```{r}
