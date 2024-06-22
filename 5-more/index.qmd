@@ -1,0 +1,20 @@
+---
+title: "Quarto already offers so much more!"
+author: ""
+date: ""
+format: html
+---
+
+## Ressources
+
+- Tutorial for getting started in your own working environment (RStudio, Jupyter, VSCode, ...) : <https://quarto.org/docs/get-started/>
+
+- Quarto user guide : <https://quarto.org/docs/guide/>
+
+- List of achievements with Quarto on "Awesome Quarto". : <https://github.com/mcanouil/awesome-quarto>
+
+- Gallery of examples: <https://quarto.org/docs/gallery/>
+
+
+
+

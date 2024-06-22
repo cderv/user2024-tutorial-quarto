@@ -1,0 +1,70 @@
+---
+title: "Wrap up"
+subtitle: "Enhancing scientific publishing through Quarto"
+institute: "Posit"
+author: "Christophe Dervieux"
+date: "2024-07-08"
+format: clean-revealjs
+code-line-numbers: false
+editor: visual
+lightbox: true
+---
+
+## Quarto is like R Markdown then
+
+* If you know R Markdown, you should be able to find your way around! 
+
+* Same principle & same foundation 
+
+* Quarto = Markdown + execution result + Pandoc
+
+## R Markdown is not archived
+
+* A vast ecosystem with an active community,
+
+* Still supported by Posit
+
+* But... fewer new features, with a focus on Quarto
+
+## Quarto CLI...
+
+orchestrates each step of rendering
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst_qmd_render_schema.png){fig-alt="A schematic representing rendering of Quarto documents from .qmd, to knitr or jupyter, to plain text markdown, then converted by pandoc into any number of output types including html, PDF, or Word document."}
+
+
+## Advantages to change
+
+* Joint projects with Jupyter users
+
+* Benefit from new features 
+
+* Fresh new formats
+
+::: notes 
+I hope the tuto gave you an idea! 
+:::
+
+## No need to convert
+
+* Change when starting a new project! 
+
+* No point in converting old documents except for living content (personal blog, website, ...)
+
+* Reminder: What works with R Markdown will continue to work!
+
+## Getting help
+
+* Review the FAQ: <https://quarto.org/docs/faq>
+
+* Have a question, post on GitHub Discussion : <https://github.com/quarto-dev/quarto-cli/discussions/>
+
+* Found (or think you found) a bug, open an issue: <https://github.com/quarto-dev/quarto-cli/issues>
+
+# Thank you!
+
+::: task
+Any questions / anything you'd like to review or learn before we wrap up the workshop?
+:::
+
+

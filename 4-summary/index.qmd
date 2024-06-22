@@ -1,0 +1,15 @@
+---
+title: "Wrap Up"
+author: ""
+date: ""
+format: html
+---
+
+## Diapos
+
+{{< fa tv >}} [Open slides in full screen](4-summary.html)
+
+```{=html}
+<iframe class="slide-deck" src="4-summary.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+```
+
