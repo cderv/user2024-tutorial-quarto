@@ -42,7 +42,22 @@ project:
 ![](images/quarto-project.png){fig-alt="Files panel in RStudio showing my-doc.qmd and _quarto.yml."}
 
 
-But projects can have special "types" that introduce additional behavior (for example, websites or books).
+
+
+## Which projects can be created ?
+
+Projects can have special "types" that introduce additional behavior (for example, websites or books).
+
+``` bash
+$ quarto create project
+? Type
+❯ default
+  website
+  blog
+  manuscript
+  book
+  confluence
+```
 
 ## Quarto Website
 
@@ -191,6 +206,118 @@ countdown(minutes = 10)
 
 Use the Quarto documentation on the `website` type to play with the options: <https://quarto.org/docs/websites/>
 :::
+
+## My turn
+
+::: task
+Let's now add a blog component to our website.
+
+-   Add a folder called `posts` and create a few minimal blog post entries and collect these from a blog page using the [listings feature](https://quarto.org/docs/websites/website-listings.html).
+
+-   Change the style of listings.
+:::
+
+# Computations
+
+## When should code be re-run? {.smaller}
+
+::: incremental
+-   You might have a reason to re-run all code in a Quarto website (every single chunk in every single document) every time you render the website.
+
+-   But, chances are, that's not what you want.
+
+    -   Just playing around styling -- you probably don't want to run the code again
+
+    -   Changed some code in a document -- you probably want to re-run the code in that document, but not necessarily others
+
+    -   Made a big change affecting computations on many or all pages -- you probably want to re-run all code
+
+-   `freeze` and `cache` options give you fine control over these decisions
+:::
+
+## Freeze {.smaller}
+
+-   The `freeze` option controls when/if computational documents be re-rendered during a global project render:
+
+``` yaml
+execute:
+  freeze: true  # never re-render during project render
+```
+
+``` yaml
+execute:
+  freeze: auto  # re-render only when source changes
+```
+
+``` yaml
+execute:
+  freeze: false  # always re-render
+```
+
+-   The `freeze` option is typically added to a `_metadata.yml` file within a specific directory, affecting all files in that directory.
+
+-   For blogs, set `feeze` in `_metadata.yml` at the root of the `posts` directory.
+
+-   You can have it only within specific subdirectories for more complex sites.
+
+## Cache
+
+-   Cache stores the results of computations for a specific file.
+
+-   Cache invalidation is triggered by changes in chunk source code (or other cache attributes you've defined).
+
+-   `cache` can also be set at the chunk level. Consider using the cache for computationally expensive chunks.
+
+## Freeze vs. cache {.smaller}
+
+-   Freeze option is typically set
+
+    -   for the whole website in `_quarto.yml`, or
+
+    -   for files within a directory in `_metadata.yml` in that directory
+
+``` yaml
+execute: 
+  freeze: auto
+```
+
+-   Cache option is typically set for a given file or for individual chunk(s) in a file.
+
+``` yaml
+execute:
+  cache: true
+```
+
+or
+
+```{r}
+#| echo: fenced
+#| cache: true
+
+1 + 1
+```
+
+# Publishing
+
+## QuartoPub
+
+-   [Quarto Pub](https://quartopub.com/) is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.
+
+-   Publish with `quarto publish`:
+
+``` {.bash filename="Terminal"}
+quarto publish quarto-pub
+```
+
+-   Gain a `_publish.yml` that is safe to check into version control.
+
+## Other venues
+
+-   GitHub Pages
+-   Posit Connect
+-   Netlify
+-   Confluence
+-   [More venues](https://quarto.org/docs/publishing/other.html)
 
 # Questions ?
 
