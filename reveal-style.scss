@@ -46,6 +46,17 @@ $presentation-font-size-root: 36px !default;
             }
         }
     }
+    li li {
+        display: flex;
+    }
+
+    .aside.bottom-0 {
+        bottom: unset;
+    }
+
+    h3 {
+        margin-top: 1em;
+    }
 }
 
 dl.code-annotation-container-grid {
@@ -58,4 +69,8 @@ dl.code-annotation-container-grid {
 
 .make-smaller {
     font-size: 0.7em;
+}
+
+.hidden-element {
+    visibility: hidden;
 }

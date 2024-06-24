@@ -27,9 +27,13 @@ library(countdown)
 
 ## Information
 
+</br>
+
 * {{< fa wifi >}} Information provided by useR's organization
 * {{< fa person-running >}} Make sure you know where the emergency exits are! 
 * {{< fa restroom >}} Toilets are located outside the lecture hall.
+
+</br>
 
 ## Code of Conduct {.smaller}
 
@@ -41,16 +45,17 @@ library(countdown)
 knitr::include_url("https://events.linuxfoundation.org/user/attend/code-of-conduct/", height = "300px")
 ```
 
-::: aside
-Full version at: <https://events.linuxfoundation.org/user/attend/code-of-conduct/>
+::: {.aside .bottom-0}
+Full version available at: <https://events.linuxfoundation.org/user/attend/code-of-conduct/>
 :::
 
 ## Who am I ?
 
--   **Instructeur:** Christophe Dervieux
+-   Christophe Dervieux
 
     -   Open-Source Software Engineer at Posit, PBC
-    -   Working on R Markdown et now also member of Quarto core dev team.
+    -   Working on R Markdown ecosystem
+    -   Member of core dev team for Quarto project
 
 
 ## Meet your neighbors
@@ -64,10 +69,11 @@ Take some time to see who can help you next to you!
 * Hello, my name is ... and yours? 
 * How long have you known R / R Markdown? 
 * Have you ever used Quarto?
+* If so, what was your latest project ?
 
 ```{r}
 #| echo: false
-countdown(minutes= 0, seconds = 30)
+countdown(minutes= 1, seconds = 0)
 ```
 
 ## How will this tutorial work?
@@ -76,11 +82,11 @@ countdown(minutes= 0, seconds = 30)
 
 - Some live demos that you can try to follow on your own
 
-- Do-it-yourself exercises
+- Some do-it-yourself exercises
 
 ### Getting help
 
-- During non-exercise parts, or in transitions - raise your hand {{< fa hand >}}
+- During non-exercise parts, or during transitions - raise your hand {{< fa hand >}}
 
 - During the exercises -- {{< fa hand >}}, but also use the stickers to signal you :
 
@@ -103,7 +109,7 @@ I'm going to **assume** that you
 
 - know R Markdown with **knitr** and Markdown syntax,
 
-- have worked with RStudio,
+- have already worked with RStudio IDE,
 
 - want to know more about Quarto.
 :::
@@ -124,13 +130,13 @@ I'm going to **teach** you
 
 # So, what is Quarto?
 
-## Quarto ... {.smaller}
+## Quarto ...
 
 - is a new open-source scientific and technical publishing system, based on Pandoc,
 - is designed and built on the +10 years of experience with R Markdown,
 - requires no special technology to install and run.
 
-[Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst_quarto_schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
 
 ## Like R Markdown then? 
 
@@ -141,7 +147,7 @@ I'm going to **teach** you
 
 ## Like R Markdown then? 
 
-Yes built on 10 years of knitr + rmarkdown -> Same principle...! 
+Yes - built on 10 years of knitr + rmarkdown -> Same principle...! 
 
 ![](images/qmd-knitr.jpeg){fig-alt="A diagram of how a .qmd is transformed into output formats via knitr and pandoc"}
 
@@ -177,7 +183,7 @@ Example for Jupyter with ipynb as input file
 
 **extends** for people who don't know R Markdown
 
-## Quarto unifies + extends R Markdown {visibility="hidden"}
+## Quarto unifies + extends R Markdown
 
 ::: incremental
 - Consistent implementation of features for different output formats: tabsets, code-folding, syntax highlighting, etc. 
@@ -190,7 +196,7 @@ Example for Jupyter with ipynb as input file
 
 ::: {.callout-important}
 
-## **rmarkdown** is still here
+## The **rmarkdown** package and its ecosystem is still here
 
 The R Markdown ecosystem continues to exist, and Quarto for R uses **rmarkdown** and **knitr** under the hood.
 :::
@@ -201,7 +207,7 @@ The R Markdown ecosystem continues to exist, and Quarto for R uses **rmarkdown**
 Illustrations by Alison Hill and Allison Horst, for RStudio.
 :::
 
-# How to use ?
+# How to use ? {.smaller}
 
 Quarto is a command line interface (CLI) that renders plain text formats (`.qmd`, `.rmd`, `.md`) OR mixed formats (`.ipynb`/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.
 
@@ -254,24 +260,24 @@ $ quarto --help
 
 ## Several ways to Render 
 
-1.  Option 1: In RStudio with ![](images/render-button.png) as a background job, and preview the output.
+1.  In RStudio with ![](images/render-button.png) as a background job, and preview the output.
 
 . . .
 
-2.  Option 2: In the Terminal via `quarto render`:
+2.  In the Terminal via `quarto render`:
 
 ```{bash}
 #| eval: false
 #| echo: true
 
-quarto render document.qmd # defaults to `format` key in document (or html)
+quarto render document.qmd # defaults to html if no `format` key
 quarto render document.qmd --to pdf
 quarto render document.qmd --to docx
 ```
 
 . . .
 
-3.  Option 3: In the R console, via the `quarto` R package:
+3.  In the R console, via the `quarto` R package:
 
 ```{r}
 #| eval: false
@@ -283,7 +289,9 @@ quarto_render("document.qmd")
 quarto_render("document.qmd", output_format = "pdf")
 ```
 
-How it works => The **quarto** R {{< fa box >}} call `quarto` CLI from R through **processx** package.
+::: make-smaller 
+How it works => The **quarto** R {{< fa box >}} calls `quarto` CLI from R through **processx** package.
+:::
 
 # Overview of Quarto formats
 
@@ -314,6 +322,8 @@ How it works => The **quarto** R {{< fa box >}} call `quarto` CLI from R through
 | Basic Formats   | [html_document](https://pkgs.rstudio.com/rmarkdown/reference/html_document.html)                     | [html](https://quarto.org/docs/output-formats/html-basics.html)                |
 |                 |                                                                                                      |                                                                                |
 |                 | [pdf_document](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)                       | [pdf](https://quarto.org/docs/output-formats/pdf-basics.html)                  |
+|                 |                                                                                                      |                                                                                |
+|                 | [typst_document]{.hidden-element}                                                                    | [typst](https://quarto.org/docs/output-formats/typst.html)                     |
 |                 |                                                                                                      |                                                                                |
 |                 | [word_document](https://pkgs.rstudio.com/rmarkdown/reference/word_document.html)                     | [docx](https://quarto.org/docs/output-formats/ms-word.html)                    |
 +-----------------+------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+
@@ -370,8 +380,8 @@ countdown(minutes = 5)
 1. Open RStudio 
 2. Move to a blank folder (or wherever you like)
 3. Create a new Quarto document - you can call it `simple-document.qmd`.
-4. Click on "Render".
-5. Open visual editor
+4. Render the document
+5. Check source editor and visual editor
 :::
 
 ::: callout-tip

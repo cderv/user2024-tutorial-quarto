@@ -12,7 +12,8 @@ Setting up your environment:
 - Install the following packages:
 
   ``` r
-  # For the exercises (dplyr and ggplot2 should be sufficient if you don't want the entire tidyverse)
+  # For the exercises 
+  # (dplyr and ggplot2 should be sufficient if you don't want the entire tidyverse)
   pkg_list <- c("rmarkdown", "palmerpenguins", "gt", "tidyverse") 
   # R base
   install.packages(pkg_list)
