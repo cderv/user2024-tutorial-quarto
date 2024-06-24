@@ -192,8 +192,9 @@ Quarto introduces the "hash pipe" in `#|` - this is the preferred syntax, althou
 2.  Consistency between YAML header / YAML in cells / Divs options (`:::`)
 3.  One option per line, offering autocompletion and validation
 
-:::::::::::::::::::::::: callout-note
+::: callout-note
 Technically, this is constructed as `<language-comment-char>|` e.g. `#` for R, Python and Julia but `//|` for OJS cells as `//` is the comment char for Javascript.
+:::
 
 ## YAML for cells options {auto-animate="true"}
 
