@@ -70,9 +70,9 @@ Here are a few tips for checking your installation if you've installed quarto yo
   ```powershell
   $ quarto check install
 
-  Quarto 1.4.555
+  Quarto 1.5.47
   [>] Checking Quarto installation......OK
-        Version: 1.4.555
+        Version: 1.5.47
         Path: C:\Users\chris\scoop\apps\quarto\current\bin
         CodePage: 1252
 
@@ -88,13 +88,13 @@ Here are a few tips for checking your installation if you've installed quarto yo
   [>] Checking basic markdown render....OK
    ```
 
-   It is better if you have TinyTeX installed to work with Quarto (<https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex>), but not mandatory of the tutorial 
+   It is better if you have TinyTeX installed to work with Quarto (<https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex>), but not mandatory for this tutorial.
 
 * `quarto check knitr` must work without error 
   ```powershell
   $ quarto check knitr
 
-  Quarto 1.4.555
+  Quarto 1.5.47
   (-) Checking R installation...........
 
   [>] Checking R installation...........OK

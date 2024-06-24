@@ -209,7 +209,7 @@ Quarto is a command line interface (CLI) that renders plain text formats (`.qmd`
 $ quarto --help
 
   Usage:   quarto
-  Version: 1.4.555
+  Version: 1.5.47
 
   Description:
 
