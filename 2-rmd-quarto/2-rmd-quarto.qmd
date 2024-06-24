@@ -5,7 +5,8 @@ institute: "Posit"
 author: "Christophe Dervieux"
 date: "2024-07-08"
 format: clean-revealjs
-editor: visual
+revealjs-plugins:
+  - codefocus
 ---
 
 ```{r}
@@ -20,7 +21,7 @@ library(countdown)
 ## Get started with Quarto!
 
 ::: callout
-# Let's do it together!
+# Let's do it together! Follow along...
 
 Create a Quarto project in RStudio and produce HTML.
 :::
@@ -48,7 +49,7 @@ Creating project at C:\Users\chris\AppData\Local\Temp\quarto-101:
 
 ``` powershell
 quarto-101
-+¦¦ quarto-101.qmd
+L¦¦ quarto-101.qmd
 L¦¦ _quarto.yml
 ```
 
@@ -80,7 +81,7 @@ Quarto enables you to weave together content and executable code into a finished
 ![New button for transforming your document in RStudio IDE](images/rstudio-render-quarto.png){fig-alt="Screenshot for RStudio IDE source menu bar in a .qmd document to show new render button."}
 
 ``` {.bash filename="terminal"}
-quarto render quarto-101.qmd # defaults to html when no other format key specified
+quarto render quarto-101.qmd # defaults to html
 quarto render quarto-101.qmd --to html
 ```
 
@@ -114,7 +115,7 @@ countdown(minutes = 2)
 
 1.  Create a sub-folder in the project e.g. `reports`.
 2.  Add the `.Rmd` exercise file named [`penguins.Rmd`](https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.Rmd) as is.
-3.  Generate HTML with `quarto preview rapport/penguins.Rmd` in Terminal.
+3.  Generate HTML with `quarto preview reports/penguins.Rmd` in Terminal.
 4.  Generate HTML using the Render button in the IDE.
 :::
 
@@ -132,7 +133,7 @@ Let's see what changes!
 
 YAML is still used to provide document-level metadata.
 
-``` {.yaml code-line-numbers="|5-7"}
+``` yaml
 ---
 title: "A penguin story"
 author: "C. Dervieux"
@@ -142,6 +143,14 @@ format:
     toc: true
 ---
 ```
+
+::: {.fragment data-code-focus="2-4"}
+-   Some general metadata informations for the document
+:::
+
+::: {.fragment data-code-focus="5-7"}
+-   Some format specific configuration for the targetted output format
+:::
 
 ## YAML for cells options {auto-animate="true"}
 
@@ -200,7 +209,7 @@ Technically, this is constructed as `<language-comment-char>|` e.g. `#` for R, P
 
 ``` yaml
 #| fig-width: 5
-#| fig-cap: À propos de penguins
+#| fig-cap: About penguins
 ```
 
 Note that YAML for Quarto will follow a "word-word" syntax, with a `-` dash and not a `.`.
@@ -220,8 +229,9 @@ countdown(minutes = 5)
 # Transform into .qmd
 
 1.  Copy `penguins.Rmd` to `new-penguins.qmd`.
-2.  Use `knitr::convert_chunk_header()` on .qmd file (see function help `?knitr::convert_chunk_header()`)
-3.  Check code cells configurations (`.` to be converted to `-` by example[^1])
+2.  Use `knitr::convert_chunk_header()` on .qmd file
+    1.  see function help `?knitr::convert_chunk_header()` to know how to use it
+3.  Check code cells configurations
 4.  Check YAML header of `.qmd` file
 5.  Produce HTML document in `.qmd` format
 :::
@@ -236,36 +246,41 @@ You can test YAML autocompletion and validation in RStudio IDE [🔗](https://qu
 
 Let's look at Quarto's built in features!
 
-## Callout Blocks {.smaller}
+## Callout Blocks {.smaller .with-logo}
 
-![](https://github.com/rstudio/bookdown/raw/main/man/figures/logo.png){.absolute fig-alt="Logo bookdown" top="-20" right="100" height="120"}
+![](https://github.com/rstudio/bookdown/raw/main/man/figures/logo.png){.absolute fig-alt="Logo bookdown" top="-40" right="100" height="120"}
 
 | R Markdown | Quarto |
-|-----------------------------------------|-------------------------------|
+|----------------------------|-------------------------------|
 | [Custom Blocks](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) of **rmarkdown** and **bookdown** to create and *style* yourself. | [Callout Blocks](https://quarto.org/docs/authoring/callouts.html) available in all formats and already *styled*. |
+
+: {tbl-colwidths="\[50,50\]"}
 
 ``` markdown
 ::: {.callout-note}
 
 ## About callouts
 
-Note that there are five types of callout, including: `note`, `warning`, `important`, `tip`, and `caution`.
+Note that there are five types of callout:
+`note`, `warning`, `important`, `tip`, and `caution`.
 :::
 ```
 
 ::: callout-note
 ## About callouts
 
-Note that there are five types of callout, including: `note`, `warning`, `important`, `tip`, and `caution`.
+Note that there are five types of callout: `note`, `warning`, `important`, `tip`, and `caution`.
 :::
 
-## References(Figures, Tables, ...) {.smaller}
+## References(Figures, Tables, ...) {.smaller .with-logo}
 
 ![](https://github.com/rstudio/bookdown/raw/main/man/figures/logo.png){.absolute fig-alt="Logo bookdown" top="-40" right="100" height="120"}
 
 | R Markdown | Quarto |
 |----------------------------------|--------------------------------------|
 | Available with **bookdown** in "book" formats (e.g. `gitbook()`) or single document variants such as `html_document2()` | [Cross References](https://quarto.org/docs/authoring/cross-references.html) available in all formats, for more content and configurable. |
+
+: {tbl-colwidths="\[50,50\]"}
 
 ::: callout-important
 ## Change of syntax!
@@ -280,15 +295,20 @@ See @fig-quarto-schematic for Alison Horst's illustration of how Quarto works.
 ![An illustrated diagram of Quarto](images/quarto-schematics.png){#fig-quarto-schematic}
 ```
 
-## References (Figures, Tables, ...) {.smaller}
+## References (Figures, Tables, ...) {.smaller .with-logo}
 
 ![](https://github.com/rstudio/bookdown/raw/main/man/figures/logo.png){.absolute fig-alt="Logo bookdown" top="-40" right="100" height="120"}
+
+</br>
+</br>
 
 ``` {.markdown data-id="md-block"}
 See @fig-quarto-schematic for Alison Horst's illustration of how Quarto works.
 
 ![An illustrated diagram of Quarto](images/quarto-schematics.png){#fig-quarto-schematic}
 ```
+</br>
+</br>
 
 ::::: columns
 ::: column
@@ -304,7 +324,7 @@ See @fig-quarto-schematic for Alison Horst's illustration of how Quarto works.
 Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.
 :::
 
-## Article Layout {.smaller}
+## Article Layout {.smaller .with-logo}
 
 ![](https://github.com/rstudio/distill/raw/main/man/figures/logo.png){.absolute fig-alt="Logo distill" top="-40" right="100" height="120"}
 
@@ -326,14 +346,14 @@ Beware of **distill** to Quarto conversion due to option conflicts!
 
 ```{r}
 #| echo: false
-countdown(minutes = 10)
+countdown(minutes = 15)
 ```
 
 ::: callout
 # Add these features!
 
 -   Try adding the following features:
-    -   [Article Layout](https://quarto.org/docs/authoring/article-layout.htm),
+    -   [Article Layout](https://quarto.org/docs/authoring/article-layout.html),
     -   [Cross References](https://quarto.org/docs/authoring/cross-references.html) (Figures, Tables, or any others...),
     -   [Callout Blocks](https://quarto.org/docs/authoring/callouts.html).
 -   See how to add layouts for figures created from code ([Figure computation](https://quarto.org/docs/authoring/figures.html#computations)).
@@ -348,17 +368,25 @@ As with R Markdown, different document formats can be produced.
 
 ## Multiple formats...
 
-::::: columns
-::: column
+::::: {.columns}
+::: {.column width="33%"}
 -   `format: html`
 -   `format: pdf`
 :::
 
-::: column
+::: {.column width="33%"}
+-   `format: typst`
 -   `format: docx`
--   `format: revealjs`
 :::
+
+::: {.column width="34%"}
+-   `format: revealjs`
+-   `format: pptx`
+:::
+
 :::::
+
+</br>
 
 ``` yaml
 format: 
@@ -417,13 +445,13 @@ format:
 
 ![](images/code-tools.png){fig-alt="Screenshot of the menu added to HTML quarto when code-tools is activated"}
 
-## Discover the options!
+## Discover the options! {.wide-list}
 
-- Quarto guide: <https://quarto.org/docs/guide/>
+-   Quarto guide: <https://quarto.org/docs/guide/>
 
-- Options reference pages for each format: <https://quarto.org/docs/reference/>
+-   Options reference pages for each format: <https://quarto.org/docs/reference/>
 
-- YAML auto-completion: <https://quarto.org/docs/tools/rstudio.html#yaml-intelligence>
+-   YAML auto-completion: <https://quarto.org/docs/tools/rstudio.html#yaml-intelligence>
 
 ## My turn!
 
@@ -432,7 +460,7 @@ format:
 ::: callout
 # Produce a PDF
 
-- Little or no change in the `.qmd` used to produce HTML.
+-   Little or no change in the `.qmd` used to produce HTML.
 :::
 
 ::: callout-warning
@@ -440,9 +468,9 @@ format:
 
 You'll need to be set up for LaTeX, but it's not really suited to the tutorial context.
 
-- PDF = LaTeX = TinyTeX installation
-- LaTeX = CTAN packages =\> Long installation
-- Producing a PDF with LaTeX =\> Not so fast
+-   PDF = LaTeX = TinyTeX installation
+-   LaTeX = CTAN packages =\> Long installation
+-   Producing a PDF with LaTeX =\> Not so fast
 :::
 
 ## Your turn!
@@ -452,8 +480,8 @@ You'll need to be set up for LaTeX, but it's not really suited to the tutorial c
 ::: callout
 # Produce a PDF with Typst
 
-- Change to `format: typst` and Render. Look at your shiny new PDF ! 
-- Learm more about Typst at in [Quarto's guide](https://quarto.org/docs/output-formats/typst.html) and tweak options.
+-   Change to `format: typst` and Render. Look at your shiny new PDF !
+-   Learm more about Typst at in [Quarto's guide](https://quarto.org/docs/output-formats/typst.html) and tweak options.
 :::
 
 # Questions ?
@@ -463,5 +491,3 @@ Now let's take a look at how Quarto can be used to produce more sophisticated co
 
 [[Next](/3-projects/)]{.button}
 :::
-
-[^1]: Improvements to be made [yihui/knitr#2262](https://github.com/yihui/knitr/issues/2262)

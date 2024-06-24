@@ -1,0 +1,86 @@
+---
+title: "A penguin story"
+date: "2024-07-08"
+format: 
+  html:
+    toc: true
+code-annotations: hover
+---
+
+## Data
+
+For this analysis, we'll use the penguin dataset in the R package `palmerpenguins` (<https://allisonhorst.github.io/palmerpenguins>).
+
+```{r}
+#| label: load-packages
+#| message: false
+library(tidyverse)
+library(palmerpenguins)
+library(gt)
+```
+
+The `penguins` dataset contains the following elements:
+
+```{r}
+glimpse(penguins)
+```
+
+## Species
+
+We have `r length(unique(penguins$species))` species in this dataset: `r knitr::combine_words(unique(penguins$species))` that are not evenly distributed.
+
+```{r}
+#| column: margin
+penguins |>
+  count(species) %>%
+  knitr::kable()
+```
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| fig-alt: Illustration of penguin culmen length and depth
+#| column: page
+knitr::include_graphics("https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png")
+```
+
+The @fig-species shows the differences in culmen by species.
+
+```{r}
+#| label: fig-species
+#| warning: false
+#| fig-with: 5.0
+#| fig-cap: Categorizing species by culmen size
+ggplot(
+  penguins,
+  aes(
+    x = bill_length_mm, y = bill_depth_mm,
+    color = species, shape = species
+  )
+) +
+  geom_point() +
+  labs(x = "Culmen length (mm)", y = "Culmen depth (mm)")
+```
+
+## manchots
+
+The table below (numbered [-@tbl-top10]) below shows the top 10 penguins in the dataset.
+
+```{r}
+#| label: tab-top10
+#| tbl-cap: The first 10 elements of the dataset
+penguins |>
+  slice_head(n = 10) |>
+  select(species, island, bill_length_mm, bill_depth_mm) |>
+  gt() # <1>
+```
+
+1. We use **gt** here, but any table package can be used, for example **flextable** or **tinytable**.
+
+::: {.callout-note collapse=true}
+
+## To find out more about this dataset
+
+See the R **palmerpenguins** package vignette available at <https://allisonhorst.github.io/palmerpenguins/>
+:::
+

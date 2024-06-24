@@ -18,20 +18,31 @@ $presentation-font-size-root: 36px !default;
 // Tweaks for callout in .smaller slides
 
 .reveal {
-    section.slide.smaller {
-        div.callout-title {
-            div.callout-icon-container {
-                & + p {
-                    display: table;
-                    text-align: center;
-                    strong {
-                        display: table-cell;
-                        vertical-align: middle;
+    section.slide {
+
+        &.smaller {
+            div.callout-title {
+                div.callout-icon-container {
+                    & + p {
+                        display: table;
+                        text-align: center;
+                        strong {
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
                     }
                 }
             }
         }
+
+        &.wide-list {
+            li {
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+        }
     }
+
     .callout.callout-titled .callout-icon::before {
         margin-top: 0.5rem;
     }
@@ -46,9 +57,6 @@ $presentation-font-size-root: 36px !default;
             }
         }
     }
-    li li {
-        display: flex;
-    }
 
     .aside.bottom-0 {
         bottom: unset;
@@ -57,6 +65,23 @@ $presentation-font-size-root: 36px !default;
     h3 {
         margin-top: 1em;
     }
+
+    table + div.sourceCode {
+        margin-top: 1em;
+    }
+
+    section.with-logo {
+        h2 + p + table {
+            margin-top: 2em;
+        }
+    }
+}
+
+/* fix first part only */
+.reveal section#get-ready {
+    li li {
+    display: flex;
+  }
 }
 
 dl.code-annotation-container-grid {

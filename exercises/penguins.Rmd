@@ -1,0 +1,60 @@
+---
+title: "A penguin story"
+date: "2024-07-08"
+output: html_document
+---
+
+## Data
+
+For this analysis, we'll use the penguin dataset in the R package `palmerpenguins` (<https://allisonhorst.github.io/palmerpenguins>).
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+library(gt)
+```
+
+The `penguins` dataset contains the following elements:
+
+```{r}
+glimpse(penguins)
+```
+
+## Species
+
+We have `r length(unique(penguins$species))` species in this dataset: `r knitr::combine_words(unique(penguins$species))` that are not evenly distributed.
+
+```{r}
+penguins |>
+  count(species) |>
+  knitr::kable()
+```
+
+```{r, echo = FALSE, out.width='75%', fig.align = 'center', fig.alt="Illustration of penguin culmen length and depth"}
+knitr::include_graphics("https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png")
+```
+
+The figure below shows the differences in culmen by species.
+
+```{r species, warning=FALSE, fig.width=5}
+ggplot(
+  penguins,
+  aes(
+    x = bill_length_mm, y = bill_depth_mm,
+    color = species, shape = species
+  )
+) +
+  geom_point() +
+  labs(x = "Culmen length (mm)", y = "Culmen depth (mm)")
+```
+
+## Penguins
+
+The table below shows the top 10 penguins in the dataset.
+
+```{r top10}
+penguins |>
+  slice_head(n = 10) |>
+  select(species, island, bill_length_mm, bill_depth_mm) |>
+  gt()
+```

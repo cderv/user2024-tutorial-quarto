@@ -5,7 +5,6 @@ institute: "Posit"
 author: "Christophe Dervieux"
 date: "2024-07-08"
 format: clean-revealjs
-editor: visual
 ---
 
 ```{r}
@@ -19,7 +18,7 @@ library(countdown)
 
 # Preparation
 
-## Get ready! {.smaller .scrollable}
+## Get ready! {#get-ready .smaller .scrollable}
 
 {{< include ../_pre-tutorial-config.qmd >}}
 
