@@ -2,7 +2,7 @@ project:
   type: website
   render: 
     - "*.qmd"
-    - "!exercices/"
+    - "!Exercises/"
     - "!exemples-correction/"
 
 website:

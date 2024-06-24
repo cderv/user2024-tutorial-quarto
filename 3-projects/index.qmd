@@ -13,7 +13,7 @@ date: ""
 <iframe class="slide-deck" src="3-projects.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
 
-## Exercices
+## Exercises
 
 If you find this helpful, you can start from the `.qmd` example report completed in previous exercises.
 

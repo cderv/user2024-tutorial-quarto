@@ -13,7 +13,7 @@ format: html
 <iframe class="slide-deck" src="2-rmd-quarto.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
 
-## Exercices
+## Exercises
 
 -   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/quarto-101.zip">{{< fa download >}} `quarto-101.zip`</i></a>
 -   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.qmd">{{< fa download >}} `penguins.qmd`</i></a>
