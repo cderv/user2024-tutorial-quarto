@@ -5,7 +5,7 @@ date: ""
 format: html
 ---
 
-## Diapos
+## Slides
 
 {{< fa tv >}} [Open slides full screen](2-rmd-quarto.html)
 

@@ -18,7 +18,7 @@ He can be contacted beforehand - See profile at [@cderv](https://github.com/cder
 
 Before the tutorial, please follow these steps:
 
-## Before coming
+## Before Tutorial day
 
 {{< include _pre-tutorial-config.qmd >}}
 
