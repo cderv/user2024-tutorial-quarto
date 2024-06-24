@@ -30,13 +30,13 @@ Quarto offers the reworked R Markdown functionalities (cross references, article
 
 
 
-# Se préparer
+# Getting ready
 
 {{< fa book >}} [Documents to read](preparation.qmd) so that you are ready for the workshop and can use the examples and do the exercises.
 
-# Programme
+# Schedule
 
-::: programme
+::: schedule
 -   {{< fa dna >}} Quarto: An evolution of R Markdown?
 
 -   {{< fa recycle >}} How do I switch from R Markdown to Quarto?
