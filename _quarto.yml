@@ -2,7 +2,7 @@ project:
   type: website
   resources: 
     - exercises.zip
-    - correction-exemples.zip
+    - correction-examples.zip
 
 website:
   page-navigation: true

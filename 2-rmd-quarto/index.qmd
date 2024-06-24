@@ -19,8 +19,8 @@ format: html
 -   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.qmd">{{< fa download >}} `penguins.qmd`</i></a>
 -   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/new-penguins.qmd">{{< fa download >}} `new-penguins.qmd`</i></a>
 
-## Exemples Correction / Démo
+## Demo / Correction of examples
 
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-pdf-demo.qmd">{{< fa download >}} `new-penguins-pdf-demo.qmd`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-pdf-demo-typst.qmd">{{< fa download >}} `new-penguins-pdf-demo-typst.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-pdf-demo.qmd">{{< fa download >}} `new-penguins-pdf-demo.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-pdf-demo-typst.qmd">{{< fa download >}} `new-penguins-pdf-demo-typst.qmd`</i></a>

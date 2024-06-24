@@ -17,8 +17,8 @@ date: ""
 
 If you find this helpful, you can start from the `.qmd` example report completed in previous exercises.
 
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a> to be renamed in your project for the exercise of this part
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a> to be renamed in your project for the exercise of this part
 
-## Exemple Correction 
+## Correction of examples
 
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exemples-correction/quarto-101-website.zip">{{< fa download >}} `quarto-101-website.zip`</i></a> : example of a website created using the project from the previous exercises.
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/quarto-101-website.zip">{{< fa download >}} `quarto-101-website.zip`</i></a> : example of a website created using the project from the previous exercises.

@@ -21,7 +21,8 @@ Setting up your environment:
 - Install the following packages:
 
   ``` r
-  # For the exercises (dplyr and ggplot2 should be sufficient if you don't want the entire tidyverse)
+  # For the exercises 
+  # (dplyr and ggplot2 should be sufficient if you don't want the entire tidyverse)
   pkg_list <- c("rmarkdown", "palmerpenguins", "gt", "tidyverse") 
   # R base
   install.packages(pkg_list)
@@ -37,7 +38,7 @@ If you prefer to have the files locally in advance:
   computer. You will be able to simply copy and paste the files you need
   throughout the tutorial.
 
-- Download [`correction-exemples.zip`](correction-exemples.zip). **This
+- Download [`correction-examples.zip`](correction-examples.zip). **This
   is the equivalent of exercise solutions - Do not look in advance if
   you really want to practice on the day**. This compressed folder
   contains various resources used as examples and demonstrations. Unzip
