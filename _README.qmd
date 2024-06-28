@@ -15,3 +15,8 @@ This repository contains the source code of the website used for the tutorial re
 ## Licence
 
 {{< include _license.qmd >}}
+
+## Acknowlegments 
+
+Thanks to Andrew Bray and Mine Cetinkaya-Rundel for their work on Materials for the ["From R Markdown to Quarto" ASA Traveling workshop](https://github.com/asa-quarto/website).
+This tutorial inspires from it, and borrows with adaptations some parts.

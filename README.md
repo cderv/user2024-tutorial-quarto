@@ -51,3 +51,10 @@ If you prefer to have the files locally in advance:
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is
 licensed under a [Creative Commons Attribution 4.0 International
 License](https://creativecommons.org/licenses/by/4.0/).
+
+## Acknowlegments
+
+Thanks to Andrew Bray and Mine Cetinkaya-Rundel for their work on
+Materials for the [“From R Markdown to Quarto” ASA Traveling
+workshop](https://github.com/asa-quarto/website). This tutorial inspires
+from it, and borrows with adaptations some parts.

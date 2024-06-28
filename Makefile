@@ -17,7 +17,10 @@ PUBLISH_CMD := $(QUARTO_CMD) publish gh-pages
 PWSH_CMD := pwsh.exe -Command
 
 # Define the target for rendering all the website
-all: tuto zip
+all: README.md tuto zip
+
+README.md: _README.qmd
+	$(RENDER_CMD) _README.qmd
 
 # Render the pre tutorial website
 pretuto:
