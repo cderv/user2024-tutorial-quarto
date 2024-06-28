@@ -81,13 +81,16 @@ $presentation-font-size-root: 36px !default;
             margin-top: 2em;
         }
     }
+
 }
 
 /* fix first part only */
-.reveal section#get-ready {
-    li li {
-    display: flex;
-  }
+.reveal section {
+    &#get-ready, &#computations-rerun, &#freeze-cache {
+        li li {
+            display: flex;
+        }
+    }
 }
 
 dl.code-annotation-container-grid {
