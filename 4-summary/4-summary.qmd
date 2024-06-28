@@ -22,7 +22,7 @@ lightbox: true
 
 * A vast ecosystem with an active community,
 
-* Still supported by Posit
+* Still supported
 
 * But... fewer new features, with a focus on Quarto
 
@@ -47,11 +47,11 @@ I hope the tuto gave you an idea!
 
 ## No need to convert
 
-* Change when starting a new project! 
+* Change when starting a new project or on python / julia collaboration project!
 
-* No point in converting old documents except for living content (personal blog, website, ...)
+* No point in converting old documents except for regularly updated content maybe (personal blog, website, ...)
 
-* Reminder: What works with R Markdown will continue to work!
+* Reminder: What works with R Markdown should continue to work!
 
 ## Getting help
 
@@ -60,6 +60,22 @@ I hope the tuto gave you an idea!
 * Have a question, post on GitHub Discussion : <https://github.com/quarto-dev/quarto-cli/discussions/>
 
 * Found (or think you found) a bug, open an issue: <https://github.com/quarto-dev/quarto-cli/issues>
+
+## Getting help
+
+::: {.callout-tip}
+
+## Troubleshooting: Creating a minimum reproducible example
+
+- For any coding question, start by creating a minimum reproducible example (reprex)
+
+- You'll find that this task is less than trivial for a complex Quarto project
+
+- But there's a good chance you'll solve your problem while creating the reprex
+  
+- Otherwise, a non miniaml reproducible is a start!
+ 
+:::
 
 # Thank you!
 
