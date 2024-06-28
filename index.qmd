@@ -8,7 +8,7 @@ date: ""
 
 Quarto is the new generation of R Markdown for publishing dynamic and static documents, with multilingual support for programming languages. With Quarto, you can create documents, books, presentations, blogs and other online resources.
 
-For this useR 2024 edition in Salzburg, a 3-hour tutorial introducing Quarto is being offered.
+For this useR 2024 edition in Salzburg, a 3-hours tutorial introducing Quarto is being offered.
 
 ::: when-where
 🗓️ Monday 8th July / 🕙 14h - 17h30 CEST
