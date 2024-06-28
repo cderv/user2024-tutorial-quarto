@@ -3,8 +3,13 @@ title: "A penguin story"
 date: "2024-07-08"
 format: 
   html:
-    toc: true
     theme: litera
+  pdf:
+    lot: true
+    lof: true
+  typst: 
+    number-sections: true
+toc: true
 code-annotations: hover
 ---
 
