@@ -41,6 +41,12 @@ $presentation-font-size-root: 36px !default;
                 margin-bottom: 2em;
             }
         }
+
+        span.button {
+            a {
+                color: white;
+            }
+        }
     }
 
     .callout.callout-titled .callout-icon::before {
