@@ -13,6 +13,7 @@ CORRECTON_ZIP := $(CORRECTON_DIR).zip
 QUARTO_CMD := quarto
 RENDER_CMD := $(QUARTO_CMD) render
 PREVIEW_CMD := $(QUARTO_CMD) preview
+PUBLISH_CMD := $(QUARTO_CMD) publish gh-pages
 PWSH_CMD := pwsh.exe -Command
 
 # Define the target for rendering all the website
@@ -22,9 +23,15 @@ all: tuto zip
 pretuto:
 	$(RENDER_CMD) --profile pretuto
 
+publish-pretuto:
+	$(PUBLISH_CMD) --profile pretuto
+
 # Render the pre tutorial website
 tuto:
 	$(RENDER_CMD)
+
+publish-tuto:
+	$(PUBLISH_CMD)
 
 # Define the clean target
 clean: clean-output clean-freeze

@@ -70,9 +70,9 @@ Here are a few tips for checking your installation if you've installed quarto yo
   ```powershell
   $ quarto check install
 
-  Quarto 1.5.47
+  Quarto 1.5.52
   [>] Checking Quarto installation......OK
-        Version: 1.5.47
+        Version: 1.5.52
         Path: C:\Users\chris\scoop\apps\quarto\current\bin
         CodePage: 1252
 
@@ -94,7 +94,7 @@ Here are a few tips for checking your installation if you've installed quarto yo
   ```powershell
   $ quarto check knitr
 
-  Quarto 1.5.47
+  Quarto 1.5.52
   (-) Checking R installation...........
 
   [>] Checking R installation...........OK
