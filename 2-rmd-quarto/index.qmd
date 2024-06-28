@@ -16,7 +16,7 @@ format: html
 ## Exercises
 
 -   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/quarto-101.zip">{{< fa download >}} `quarto-101.zip`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.qmd">{{< fa download >}} `penguins.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.Rmd">{{< fa download >}} `penguins.Rmd`</i></a>
 -   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/new-penguins.qmd">{{< fa download >}} `new-penguins.qmd`</i></a>
 
 ## Demo / Correction of examples
