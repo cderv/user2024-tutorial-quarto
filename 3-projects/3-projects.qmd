@@ -43,13 +43,13 @@ project:
 ::: {.column .fragment .fade-right width="50%"}
 This is a Quarto Project.
 
-![](images/quarto-project.png){.drop fig-alt="Files panel in RStudio showing my-doc.qmd and _quarto.yml." width=80%}
+![](images/quarto-project.png){fig-alt="Files panel in RStudio showing my-doc.qmd and _quarto.yml." width=80%}
 :::
 
 ::: {.column .fragment .fade-left width="50%"}
 This is not.
 
-![](images/not-quarto-project.png){.drop fig-alt="Files panel in RStudio showing only my-doc.qmd." width=80%}
+![](images/not-quarto-project.png){fig-alt="Files panel in RStudio showing only my-doc.qmd." width=80%}
 :::
 :::
 

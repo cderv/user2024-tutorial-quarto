@@ -79,8 +79,7 @@ I hope the tuto gave you an idea!
 
 # Thank you!
 
-::: task
 Any questions / anything you'd like to review or learn before we wrap up the workshop?
-:::
 
+[[Back to website]{.button}](/)
 
