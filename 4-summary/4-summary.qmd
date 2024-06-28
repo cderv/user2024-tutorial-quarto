@@ -81,5 +81,5 @@ I hope the tuto gave you an idea!
 
 Any questions / anything you'd like to review or learn before we wrap up the workshop?
 
-[[Back to website]{.button}](/)
+[[Back to website](/index.html)]{.button}
 
