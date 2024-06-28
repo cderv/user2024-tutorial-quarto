@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "preparation.html",
+    "href": "preparation.html",
+    "title": "Pre-tutorial instructions",
+    "section": "",
+    "text": "Need help before the tutorial in Salzburg ?\n\n\n\nChristophe will be around on Monday 8th July in the morning - you can reach out to meet if you have any problems to share ahead of the tutorial.\nHe can be contacted beforehand - See profile at @cderv.\nBefore the tutorial, please follow these steps:",
+    "crumbs": [
+      "Pre-Tuto Instructions"
+    ]
+  },
+  {
+    "objectID": "preparation.html#before-tutorial-day",
+    "href": "preparation.html#before-tutorial-day",
+    "title": "Pre-tutorial instructions",
+    "section": "Before Tutorial day",
+    "text": "Before Tutorial day\nSetting up your environment:\n\nDownload and install the latest versions of R, RStudio and Quarto:\n\nA recent version of R (4.4 or higher):\nThe latest version of RStudio (2024.04.2-764 or higher):\nThe latest version of Quarto 1.5 available at https://quarto.org/docs/download/\n\nInstall the following packages:\n# For the exercises \n# (dplyr and ggplot2 should be sufficient if you don't want the entire tidyverse)\npkg_list &lt;- c(\"rmarkdown\", \"palmerpenguins\", \"gt\", \"tidyverse\") \n# R base\ninstall.packages(pkg_list)\n# or using pak\npak::pkg_install(pkg_list)\n\nIf you prefer to have the files locally in advance:\n\nDownload exercises.zip. This compressed folder contains various resources that may be useful for the exercises. Unzip it on your desktop or in a location that you can easily locate on your computer. You will be able to simply copy and paste the files you need throughout the tutorial.\nDownload correction-examples.zip. This is the equivalent of exercise solutions - Do not look in advance if you really want to practice on the day. This compressed folder contains various resources used as examples and demonstrations. Unzip it on your desktop or in a location that you can easily locate on your computer. You will be able to simply copy and paste the files you need throughout the tutorial.\n\n\n\n\n\n\n\nAdvice\n\n\n\nCreate a dedicated folder on your environment for the tutorial to store the exercises, your notes and to be able to do the exercises in a healthy environment.\nDon’t create an RStudio folder because we’ll be creating different projects for the exercises, and creating RStudio sub-projects doesn’t work well.\nExample of organization:\n&gt; tuto-quarto-user-2024\n|-- notes/\n|-- exercises/\n  |-- rstudio-project1/\n  |-- quarto-project1/\n|-- README.md (to note the context of these files)",
+    "crumbs": [
+      "Pre-Tuto Instructions"
+    ]
+  },
+  {
+    "objectID": "preparation.html#what-you-need-to-know-or-revise-to-feel-at-ease",
+    "href": "preparation.html#what-you-need-to-know-or-revise-to-feel-at-ease",
+    "title": "Pre-tutorial instructions",
+    "section": "What you need to know (or revise) to feel at ease",
+    "text": "What you need to know (or revise) to feel at ease\nAssumption for the tutorial: You know R Markdown and you know Markdown syntax.\n\nMarkdown syntax for Pandoc\n\nThis is the same as R Markdown:\nhttps://bookdown.org/yihui/rmarkdown/markdown-syntax.html\nIt is also documented on Quarto website:\nhttps://quarto.org/docs/authoring/markdown-basics.html\n\nInclude R code with knitr\n\nR code chunks:\nhttps://bookdown.org/yihui/rmarkdown/r-code.html\nWhat is an R Markdown file?\nhttps://bookdown.org/yihui/rmarkdown-cookbook/rmarkdown-anatomy.html",
+    "crumbs": [
+      "Pre-Tuto Instructions"
+    ]
+  },
+  {
+    "objectID": "preparation.html#check-your-setup",
+    "href": "preparation.html#check-your-setup",
+    "title": "Pre-tutorial instructions",
+    "section": "Check your setup",
+    "text": "Check your setup\nHere are a few tips for checking your installation if you’ve installed quarto yourself:\n\nquarto check install must operate without error\n$ quarto check install\n\nQuarto 1.5.52\n[&gt;] Checking Quarto installation......OK\n      Version: 1.5.52\n      Path: C:\\Users\\chris\\scoop\\apps\\quarto\\current\\bin\n      CodePage: 1252\n\n[&gt;] Checking tools....................OK\n      TinyTeX: v2024.03.13\n      Chromium: 869685\n\n[&gt;] Checking LaTeX....................OK\n      Using: TinyTex\n      Path: C:\\Users\\chris\\AppData\\Roaming\\TinyTeX\\bin\\windows\\\n      Version: 2024\n\n[&gt;] Checking basic markdown render....OK\nIt is better if you have TinyTeX installed to work with Quarto (https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex), but not mandatory for this tutorial.\nquarto check knitr must work without error\n$ quarto check knitr\n\nQuarto 1.5.52\n(-) Checking R installation...........\n\n[&gt;] Checking R installation...........OK\n      Version: 4.4.0\n      Path: C:/PROGRA~1/R/R-44~1.0\n      LibPaths:\n        - C:/Users/chris/AppData/Local/R/win-library/4.4\n        - C:/Program Files/R/R-4.4.0/library\n      knitr: 1.47\n      rmarkdown: 2.27\n\n[&gt;] Checking Knitr engine render......OK",
+    "crumbs": [
+      "Pre-Tuto Instructions"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Enhancing scientific publishing through Quarto",
+    "section": "",
+    "text": "Quarto is the new generation of R Markdown for publishing dynamic and static documents, with multilingual support for programming languages. With Quarto, you can create documents, books, presentations, blogs and other online resources.\nFor this useR 2024 edition in Salzburg, a 3-hours tutorial introducing Quarto is being offered.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowlegments",
+    "href": "index.html#acknowlegments",
+    "title": "Enhancing scientific publishing through Quarto",
+    "section": "Acknowlegments",
+    "text": "Acknowlegments\nThanks to Andrew Bray and Mine Cetinkaya-Rundel for their work on Materials for the “From R Markdown to Quarto” ASA Traveling workshop. This tutorial inspires from it, and borrows with adaptations some parts.",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
