@@ -352,6 +352,8 @@ countdown(minutes = 15)
 ::: callout
 # Add these features!
 
+In your `new-penguins.qmd` document:
+
 -   Try adding the following features:
     -   [Article Layout](https://quarto.org/docs/authoring/article-layout.html),
     -   [Cross References](https://quarto.org/docs/authoring/cross-references.html) (Figures, Tables, or any others...),
@@ -360,6 +362,18 @@ countdown(minutes = 15)
 -   And much more in the [Authoring](https://quarto.org/docs/guide/) section of the guide. Curious about Quarto's unique features?
     -   [Code Annotation](https://quarto.org/docs/authoring/code-annotation.html)
     -   Built-in [Diagram](https://quarto.org/docs/authoring/diagrams.html) renderers
+:::
+
+::: {.columns .make-smaller}
+::: {.column width=70%}
+::: {.callout-note icon=false}
+
+You can start from your previous document, or download a fresh version from [Tutorial's website](http://localhost:5428/2-rmd-quarto/#exercises)
+
+:::
+:::
+::: {.colum width=30%}
+:::
 :::
 
 # Quarto formats
@@ -475,14 +489,27 @@ You'll need to be set up for LaTeX, but it's not really suited to the tutorial c
 
 ## Your turn!
 
-#### Demo time ! 🕙
-
 ::: callout
 # Produce a PDF with Typst
 
 -   Change to `format: typst` and Render. Look at your shiny new PDF !
 -   Learm more about Typst at in [Quarto's guide](https://quarto.org/docs/output-formats/typst.html) and tweak options.
 :::
+
+::: {.callout-important}
+
+## Quarto 1.5 required
+
+You really need latest Quarto 1.5 for our example to render completely.
+
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+#### Demo time ! 🕙 {.fragment}
 
 # Questions ?
 

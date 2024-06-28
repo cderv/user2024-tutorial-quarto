@@ -1,10 +1,7 @@
 ---
 title: "A penguin story"
 date: "2024-07-08"
-format: 
-  html:
-    toc: true
-code-annotations: hover
+format: html
 ---
 
 ## Data
@@ -30,27 +27,25 @@ glimpse(penguins)
 We have `r length(unique(penguins$species))` species in this dataset: `r knitr::combine_words(unique(penguins$species))` that are not evenly distributed.
 
 ```{r}
-#| column: margin
 penguins |>
-  count(species) %>%
+  count(species) |>
   knitr::kable()
 ```
 
 ```{r}
 #| echo: false
+#| out-width: 75%
 #| fig-align: center
 #| fig-alt: Illustration of penguin culmen length and depth
-#| column: page
 knitr::include_graphics("https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png")
 ```
 
-The @fig-species shows the differences in culmen by species.
+The figure below shows the differences in culmen by species.
 
 ```{r}
-#| label: fig-species
+#| label: species
 #| warning: false
-#| fig-with: 5.0
-#| fig-cap: Categorizing species by culmen size
+#| fig-width: 5
 ggplot(
   penguins,
   aes(
@@ -62,25 +57,18 @@ ggplot(
   labs(x = "Culmen length (mm)", y = "Culmen depth (mm)")
 ```
 
-## manchots
+## Penguins
 
-The table below (numbered [-@tbl-top10]) below shows the top 10 penguins in the dataset.
+The table below shows the top 10 penguins in the dataset.
 
 ```{r}
-#| label: tab-top10
-#| tbl-cap: The first 10 elements of the dataset
+#| label: top10
 penguins |>
   slice_head(n = 10) |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
-  gt() # <1>
+  gt()
 ```
-
-1. We use **gt** here, but any table package can be used, for example **flextable** or **tinytable**.
-
-::: {.callout-note collapse=true}
 
 ## To find out more about this dataset
 
 See the R **palmerpenguins** package vignette available at <https://allisonhorst.github.io/palmerpenguins/>
-:::
-

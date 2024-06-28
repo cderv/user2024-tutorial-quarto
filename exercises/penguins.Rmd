@@ -58,3 +58,7 @@ penguins |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
   gt()
 ```
+
+## To find out more about this dataset
+
+See the R **palmerpenguins** package vignette available at <https://allisonhorst.github.io/palmerpenguins/>
