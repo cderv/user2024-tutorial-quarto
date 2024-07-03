@@ -70,14 +70,14 @@ Here are a few tips for checking your installation if you've installed quarto yo
   ```powershell
   $ quarto check install
 
-  Quarto 1.5.52
+  Quarto 1.5.53
   [>] Checking Quarto installation......OK
-        Version: 1.5.52
+        Version: 1.5.53
         Path: C:\Users\chris\scoop\apps\quarto\current\bin
         CodePage: 1252
 
   [>] Checking tools....................OK
-        TinyTeX: v2024.03.13
+        TinyTeX: v2024.07.03
         Chromium: 869685
 
   [>] Checking LaTeX....................OK
@@ -94,7 +94,7 @@ Here are a few tips for checking your installation if you've installed quarto yo
   ```powershell
   $ quarto check knitr
 
-  Quarto 1.5.52
+  Quarto 1.5.53
   (-) Checking R installation...........
 
   [>] Checking R installation...........OK
