@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.52">
+<meta name="generator" content="quarto-1.5.53">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Enhancing scientific publishing through Quarto</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/cderv/tuto-quarto-user-2024" title="GitHub Repo" class="quarto-navigation-tool px-1" aria-label="GitHub Repo"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/cderv/user2024-tutorial-quarto" title="GitHub Repo" class="quarto-navigation-tool px-1" aria-label="GitHub Repo"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -143,10 +143,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#about-quarto" id="toc-about-quarto" class="nav-link active" data-scroll-target="#about-quarto">About Quarto</a></li>
   <li><a href="#getting-ready" id="toc-getting-ready" class="nav-link" data-scroll-target="#getting-ready">Getting ready</a></li>
   <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a>
-  <ul class="collapse">
+  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
   <li><a href="#acknowlegments" id="toc-acknowlegments" class="nav-link" data-scroll-target="#acknowlegments">Acknowlegments</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -210,12 +208,12 @@ ul.task-list li input[type="checkbox"] {
 <h1>Instructor</h1>
 <p>Christophe Dervieux is an open-Source sofware engineer at <a href="https://posit.co/">Posit, PBC</a> working on projects in the R Markdown and Quarto ecosystems.</p>
 <p><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" class="img-fluid"> This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<section id="acknowlegments" class="level2">
-<h2 class="anchored" data-anchor-id="acknowlegments">Acknowlegments</h2>
+</section>
+<section id="acknowlegments" class="level1">
+<h1>Acknowlegments</h1>
 <p>Thanks to Andrew Bray and Mine Cetinkaya-Rundel for their work on Materials for the <a href="https://github.com/asa-quarto/website">“From R Markdown to Quarto” ASA Traveling workshop</a>. This tutorial inspires from it, and borrows with adaptations some parts.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -311,7 +309,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/cderv\.github\.io\/user2024-tutorial-quarto\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
