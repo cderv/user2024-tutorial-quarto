@@ -3,7 +3,7 @@
 
 This repository contains the source code of the website used for the
 tutorial resources, available at
-https://cderv.github.io/tuto-quarto-user-2024/
+https://cderv.github.io/user2024-tutorial-quarto/
 
 ## To be ready and do the exercises
 

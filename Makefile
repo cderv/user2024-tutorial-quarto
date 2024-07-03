@@ -14,7 +14,7 @@ CORRECTON_ZIP := $(CORRECTON_DIR).zip
 QUARTO_CMD := quarto
 RENDER_CMD := $(QUARTO_CMD) render
 PREVIEW_CMD := $(QUARTO_CMD) preview
-PUBLISH_CMD := $(QUARTO_CMD) publish quartopub
+PUBLISH_CMD := $(QUARTO_CMD) publish gh-pages
 PWSH_CMD := pwsh.exe -Command
 
 # Define the target for rendering all the website
