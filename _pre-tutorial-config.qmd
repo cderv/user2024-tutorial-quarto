@@ -2,9 +2,9 @@ Setting up your environment:
 
 - Download and install the latest versions of R, RStudio and Quarto:
 
-  - A recent version of R (4.4 or higher):
+  - A recent version of R (4.4 or higher)
     
-  - The latest version of RStudio (`2024.04.2-764` or higher):
+  - The latest version of RStudio (`2024.04.2-764` or higher)
     
   - The latest version of Quarto `1.5` available at <https://quarto.org/docs/download/>
     
