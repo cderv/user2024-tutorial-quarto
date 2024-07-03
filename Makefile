@@ -3,6 +3,7 @@ SHELL := pwsh.exe
 
 # Define the output directory
 OUTPUT_DIR := _site
+OUTPUT_DIR2 := _site-pretuto
 FREEZE_DIR := _freeze
 EXERCISES_DIR := exercises
 EXERCISES_ZIP := $(EXERCISES_DIR).zip
@@ -13,7 +14,7 @@ CORRECTON_ZIP := $(CORRECTON_DIR).zip
 QUARTO_CMD := quarto
 RENDER_CMD := $(QUARTO_CMD) render
 PREVIEW_CMD := $(QUARTO_CMD) preview
-PUBLISH_CMD := $(QUARTO_CMD) publish gh-pages
+PUBLISH_CMD := $(QUARTO_CMD) publish quartopub
 PWSH_CMD := pwsh.exe -Command
 
 # Define the target for rendering all the website
@@ -41,9 +42,11 @@ clean: clean-output clean-freeze
 
 clean-output:
 ifeq ($(OS),Windows_NT)
-		$(PWSH_CMD) "if (Test-Path $(FREEZE_DIR)) { Remove-Item -Recurse -Force $(OUTPUT_DIR) }"
+		$(PWSH_CMD) "if (Test-Path $(OUTPUT_DIR)) { Remove-Item -Recurse -Force $(OUTPUT_DIR) }"
+		$(PWSH_CMD) "if (Test-Path $(OUTPUT_DIR2)) { Remove-Item -Recurse -Force $(OUTPUT_DIR2) }"
 else
 		[ -d $(OUTPUT_DIR) ] && rm -rf $(OUTPUT_DIR) || true
+		[ -d $(OUTPUT_DIR2) ] && rm -rf $(OUTPUT_DIR2) || true
 endif
 
 clean-freeze:
