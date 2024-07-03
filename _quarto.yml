@@ -18,7 +18,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/cderv/tuto-quarto-user-2024
+        href: https://github.com/cderv/user2024-tutorial-quarto
         text: "GitHub Repo"
     style: docked
     search: true
