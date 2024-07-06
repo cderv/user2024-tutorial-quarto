@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/1-what-is-quarto/1-what-is-quarto.html</loc>
+    <lastmod>2024-06-28T22:40:32.763Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/exercises/new-penguins.html</loc>
+    <lastmod>2024-06-28T22:40:33.495Z</lastmod>
+  </url>
+  <url>
     <loc>https://cderv.github.io/user2024-tutorial-quarto/preparation.html</loc>
     <lastmod>2024-07-03T14:08:24.599Z</lastmod>
   </url>
   <url>
     <loc>https://cderv.github.io/user2024-tutorial-quarto/index.html</loc>
     <lastmod>2024-06-28T22:41:37.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/3-projects/index.html</loc>
+    <lastmod>2024-06-28T22:40:32.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/1-what-is-quarto/index.html</loc>
+    <lastmod>2024-06-28T22:40:32.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/4-summary/4-summary.html</loc>
+    <lastmod>2024-06-28T22:40:32.903Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/5-more/index.html</loc>
+    <lastmod>2024-06-28T22:40:32.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/2-rmd-quarto/index.html</loc>
+    <lastmod>2024-06-28T22:40:32.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/4-summary/index.html</loc>
+    <lastmod>2024-06-28T22:40:32.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/exercises/simple-document.html</loc>
+    <lastmod>2024-06-28T22:40:33.501Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/3-projects/3-projects.html</loc>
+    <lastmod>2024-06-28T22:40:32.867Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cderv.github.io/user2024-tutorial-quarto/2-rmd-quarto/2-rmd-quarto.html</loc>
+    <lastmod>2024-06-28T22:40:32.817Z</lastmod>
   </url>
 </urlset>
