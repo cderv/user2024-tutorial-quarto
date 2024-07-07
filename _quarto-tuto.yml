@@ -6,7 +6,7 @@ project:
     - "!examples-correction/"
 
 website:
-  repo-url: https://github.com/cderv/tuto-quarto-user-2024
+  repo-url: https://github.com/cderv/user2024-tutorial-quarto
   repo-actions: [edit, issue]
 
   sidebar:
