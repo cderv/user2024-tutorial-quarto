@@ -551,6 +551,9 @@ Christophe Dervieux
 </div></aside></section>
 <section id="section" class="slide level2" data-background-image="images/screenshot-blog.png">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
 <section id="quarto-books" class="slide level2">
 <h2>Quarto Books</h2>
@@ -595,6 +598,9 @@ Christophe Dervieux
 </section>
 <section id="section-1" class="slide level2" data-background-image="images/screenshot-book-hopr.png">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
 <section id="and-much-more" class="slide level2">
 <h2>And much more…</h2>
@@ -1182,7 +1188,7 @@ Christophe Dervieux
 <h2>Your turn!</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_6bb4bcf5" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_5411acb4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1224,7 +1230,7 @@ Christophe Dervieux
 <h1>Computations</h1>
 
 </section>
-<section id="computations-rerun" class="slide level2 smaller">
+<section id="computations-rerun" class="slide level2">
 <h2>When should code be re-run?</h2>
 <div>
 <ul>
@@ -1239,17 +1245,18 @@ Christophe Dervieux
 </ul>
 </div>
 </section>
-<section id="freeze" class="slide level2 smaller">
+<section id="freeze" class="slide level2">
 <h2>Freeze</h2>
-<ul>
-<li>The <code>freeze</code> option controls when/if computational documents be re-rendered during a global project render:</li>
-</ul>
-<div class="sourceCode" id="cb8" style="margin-bottom: 0.5rem"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
+<p>The <code>freeze</code> option controls when/if computational documents be re-rendered during a global project render:</p>
+<div class="sourceCode" id="cb8" style="margin-bottom: 1rem"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
 <span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co">  # never re-render during project render</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb9" style="margin-bottom: 0.5rem"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
+<div class="sourceCode" id="cb9" style="margin-bottom: 1rem"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
 <span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span><span class="co">  # re-render only when source changes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb10" style="margin-bottom: 0.5rem"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
+<div class="sourceCode" id="cb10" style="margin-bottom: 1rem"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
 <span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">  # always re-render (default)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="freeze-1" class="slide level2">
+<h2>Freeze</h2>
 <ul>
 <li><p>The <code>freeze</code> option is typically added to a <code>_metadata.yml</code> file within a specific directory, affecting all files in that directory. <a href="https://quarto.org/docs/projects/quarto-projects.html#shared-metadata">Shared Metadata</a></p></li>
 <li><p>It can also be set a root level for the whole website in <code>_quarto.yml</code></p></li>
@@ -1265,7 +1272,7 @@ Christophe Dervieux
 <li><p><code>cache</code> can also be set at the chunk level. Consider using the cache for computationally expensive chunks.</p></li>
 </ul>
 </section>
-<section id="freeze-cache" class="slide level2 smaller">
+<section id="freeze-cache-1" class="slide level2">
 <h2>Freeze vs.&nbsp;cache</h2>
 <ul>
 <li><p>Freeze option is typically set</p>
@@ -1276,6 +1283,9 @@ Christophe Dervieux
 </ul>
 <div class="sourceCode" id="cb11"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="freeze-cache-2" class="slide level2">
+<h2>Freeze vs.&nbsp;cache</h2>
 <ul>
 <li>Cache option is typically set for a given file or for individual chunk(s) in a file.</li>
 </ul>
@@ -1332,7 +1342,7 @@ Christophe Dervieux
 <div class="sourceCode" id="cb15"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb15-1"><a aria-hidden="true" tabindex="-1"></a>❯ quarto publish <span class="op">--</span>help</span>
 <span id="cb15-2"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a aria-hidden="true" tabindex="-1"></a>Usage<span class="op">:</span>   quarto publish <span class="op">[</span>provider<span class="op">]</span> <span class="op">[</span>path<span class="op">]</span></span>
-<span id="cb15-4"><a aria-hidden="true" tabindex="-1"></a>Version<span class="op">:</span> <span class="dv">1.5</span><span class="op">.</span><span class="dv">52</span></span>
+<span id="cb15-4"><a aria-hidden="true" tabindex="-1"></a>Version<span class="op">:</span> <span class="dv">1.5</span><span class="op">.</span><span class="dv">53</span></span>
 <span id="cb15-5"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-6"><a aria-hidden="true" tabindex="-1"></a><span class="dt">Description</span><span class="op">:</span></span>
 <span id="cb15-7"><a aria-hidden="true" tabindex="-1"></a></span>
@@ -1368,7 +1378,7 @@ Christophe Dervieux
 <li>Gain a <code>_publish.yml</code> that is safe to check into version control.</li>
 </ul>
 </section>
-<section id="our-turn-2" class="slide level2 hidden">
+<section id="our-turn-2" class="slide level2">
 <h2>Our turn!</h2>
 <div class="callout callout-none no-icon callout-titled callout-style-simple">
 <div class="callout-body">
@@ -1382,10 +1392,19 @@ Christophe Dervieux
 </div>
 </div>
 </div>
-</section>
-<section id="want-to-try-it-yourself" class="slide level2 callout-info">
-<h2>Want to try it yourself ?</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Want to try it yourself ?</strong></p>
+</div>
+<div class="callout-content">
 <p>You need to create an account first at <a href="https://quartopub.com/" class="uri">https://quartopub.com/</a></p>
+</div>
+</div>
+</div>
 </section></section>
 <section id="questions" class="title-slide slide level1 center">
 <h1>Questions ?</h1>
@@ -1876,7 +1895,7 @@ Christophe Dervieux
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
+    <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":false,"openEffect":"zoom","selector":".lightbox"});
     (function() {
       let previousOnload = window.onload;
       window.onload = () => {

@@ -39,7 +39,7 @@
     "href": "1-what-is-quarto/1-what-is-quarto.html#how-will-this-tutorial-work",
     "title": "What is Quarto ?",
     "section": "How will this tutorial work?",
-    "text": "How will this tutorial work?\n\nSome part dedicated to slides presentations\nSome live demos that you can try to follow on your own\nSome do-it-yourself exercises\n\nGetting help\n\nDuring non-exercise parts, or during transitions - raise your hand \nDuring the exercises – , but also use the stickers to signal you :\n\nPink: I need help!\nBlue: I’m done!\n\n\n\nDuring the tutorial some time will be dedicated for questions, so they can also be grouped at the end of sections, or even at the end of sessions. I’ll be also present at the conf if any questions come later."
+    "text": "How will this tutorial work?\n\nSome part dedicated to slides presentations\nSome live demos that you can try to follow on your own\nSome do-it-yourself exercises\n\nGetting help\nLet’s benefit from being small room !\n\nDuring non-exercise parts, or during transitions - raise your hand , and I’ll answer question for all.\nDuring the exercises –  too, and I’ll come help you.\n\n\nDuring the tutorial some time will be dedicated for questions, so they can also be grouped at the end of sections, or even at the end of sessions. I’ll be also present at the conf if any questions come later."
   },
   {
     "objectID": "1-what-is-quarto/1-what-is-quarto.html#section",
@@ -130,7 +130,7 @@
     "href": "1-what-is-quarto/1-what-is-quarto.html#one-install-batteries-included",
     "title": "What is Quarto ?",
     "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nRMarkdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n…\n\n\n\n\n\nAny language, exact same approach and syntax"
+    "text": "One install, “Batteries included”\n\nR Markdown grew into a large ecosystem, with varying syntax.\n\n\n\nQuarto comes “batteries included” straight out of the box\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\n…\n\n\n\n\n\nAny language, exact same approach and syntax"
   },
   {
     "objectID": "1-what-is-quarto/1-what-is-quarto.html#many-quarto-formats",
@@ -151,7 +151,7 @@
     "href": "1-what-is-quarto/1-what-is-quarto.html#lets-try-it",
     "title": "What is Quarto ?",
     "section": "Let’s try it!",
-    "text": "Let’s try it!\n\n\n\n−+\n05:00\n\n\n\n\n\n\nTo do together\n\n\n\nOpen RStudio\nMove to a blank folder (or wherever you like)\nCreate a new Quarto document - you can call it simple-document.qmd.\nRender the document\nCheck source editor and visual editor\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nsimple-document.qmd is available for download if required"
+    "text": "Let’s try it!\n\n\n\n−+\n05:00\n\n\n\n\n\n\nTo do together\n\n\n\nOpen RStudio\nMove to a blank folder (or wherever you like)\nCreate a new Quarto document using File &gt; New File… menu\n\nyou can call it simple-document.qmd.\n\nRender the document\nCheck source editor and visual editor\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nsimple-document.qmd is available for download if required."
   },
   {
     "objectID": "exercises/new-penguins.html",
@@ -263,7 +263,7 @@
     "href": "3-projects/index.html#exercises",
     "title": "Working in projects",
     "section": "Exercises",
-    "text": "Exercises\nIf you find this helpful, you can start from the .qmd example report completed in previous exercises.\n\n new-penguins-full-example-corrected.qmd to be renamed in your project for the exercise of this part.",
+    "text": "Exercises\nIf you find this helpful, you can start from the .qmd example report completed in previous exercises.\n\n new-penguins-full-example-corrected.qmd to be renamed in your project for the exercise of this part.\n\n(For the above, do right click &gt; save link under… )",
     "crumbs": [
       "Working in projects"
     ]
@@ -303,7 +303,7 @@
     "href": "1-what-is-quarto/index.html#exercises",
     "title": "Quarto: An evolution of R Markdown?",
     "section": "Exercises",
-    "text": "Exercises\n\n simple-document.qmd",
+    "text": "Exercises\n\n simple-document.qmd (Right click &gt; save link under… )",
     "crumbs": [
       "What is Quarto?"
     ]
@@ -402,7 +402,7 @@
     "href": "2-rmd-quarto/index.html#exercises",
     "title": "From Rmd to Qmd",
     "section": "Exercises",
-    "text": "Exercises\n\n quarto-101.zip\n penguins.Rmd\n new-penguins.qmd",
+    "text": "Exercises\n\n quarto-101.zip\n penguins.Rmd\n new-penguins.qmd\n\n(For the above, do right click &gt; save link under… )",
     "crumbs": [
       "From Rmd to Qmd"
     ]
@@ -412,7 +412,7 @@
     "href": "2-rmd-quarto/index.html#demo-correction-of-examples",
     "title": "From Rmd to Qmd",
     "section": "Demo / Correction of examples",
-    "text": "Demo / Correction of examples\n\n new-penguins-complete-example-correct.qmd\n new-penguins-pdf-demo.qmd\n new-penguins-pdf-demo-typst.qmd",
+    "text": "Demo / Correction of examples\n\n new-penguins-complete-example-correct.qmd\n new-penguins-pdf-demo.qmd\n new-penguins-pdf-demo-typst.qmd\n\n(For the above, do right click &gt; save link under… )",
     "crumbs": [
       "From Rmd to Qmd"
     ]
@@ -554,7 +554,14 @@
     "href": "3-projects/3-projects.html#freeze",
     "title": "Quarto projects for advanced content",
     "section": "Freeze",
-    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render (default)\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory. Shared Metadata\nIt can also be set a root level for the whole website in _quarto.yml\nYou can have it only within specific subdirectories for more complex sites."
+    "text": "Freeze\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render (default)"
+  },
+  {
+    "objectID": "3-projects/3-projects.html#freeze-1",
+    "href": "3-projects/3-projects.html#freeze-1",
+    "title": "Quarto projects for advanced content",
+    "section": "Freeze",
+    "text": "Freeze\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory. Shared Metadata\nIt can also be set a root level for the whole website in _quarto.yml\nYou can have it only within specific subdirectories for more complex sites."
   },
   {
     "objectID": "3-projects/3-projects.html#cache",
@@ -564,11 +571,18 @@
     "text": "Cache\n\nQuarto relies on computation engine’s caching mechanism, i.e. for engine: knitr and R .qmd document, knitr caching mechanism is used.\nCache stores the results of computations for a specific file.\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined).\ncache can also be set at the chunk level. Consider using the cache for computationally expensive chunks."
   },
   {
-    "objectID": "3-projects/3-projects.html#freeze-cache",
-    "href": "3-projects/3-projects.html#freeze-cache",
+    "objectID": "3-projects/3-projects.html#freeze-cache-1",
+    "href": "3-projects/3-projects.html#freeze-cache-1",
     "title": "Quarto projects for advanced content",
     "section": "Freeze vs. cache",
-    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{r}\n#| cache: true\n\n1 + 1\n```\n\n[1] 2"
+    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto"
+  },
+  {
+    "objectID": "3-projects/3-projects.html#freeze-cache-2",
+    "href": "3-projects/3-projects.html#freeze-cache-2",
+    "title": "Quarto projects for advanced content",
+    "section": "Freeze vs. cache",
+    "text": "Freeze vs. cache\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{r}\n#| cache: true\n\n1 + 1\n```\n\n[1] 2"
   },
   {
     "objectID": "3-projects/3-projects.html#our-turn-1",
@@ -582,7 +596,7 @@
     "href": "3-projects/3-projects.html#built-in-publish-mechanism",
     "title": "Quarto projects for advanced content",
     "section": "Built-in publish mechanism",
-    "text": "Built-in publish mechanism\n❯ quarto publish --help\n\nUsage:   quarto publish [provider] [path]\nVersion: 1.5.52\n\nDescription:\n\n  Publish a document or project to a provider.\n\n  Available providers include:\n\n   - Quarto Pub (quarto-pub)\n   - GitHub Pages (gh-pages)\n   - Posit Connect (connect)\n   - Posit Cloud (posit-cloud)\n   - Netlify (netlify)\n   - Confluence (confluence)\n   - Hugging Face Spaces (huggingface)\n\n  Accounts are configured interactively during publishing.\n  Manage/remove accounts with: quarto publish accounts\nMore details at https://quarto.org/docs/publishing/"
+    "text": "Built-in publish mechanism\n❯ quarto publish --help\n\nUsage:   quarto publish [provider] [path]\nVersion: 1.5.53\n\nDescription:\n\n  Publish a document or project to a provider.\n\n  Available providers include:\n\n   - Quarto Pub (quarto-pub)\n   - GitHub Pages (gh-pages)\n   - Posit Connect (connect)\n   - Posit Cloud (posit-cloud)\n   - Netlify (netlify)\n   - Confluence (confluence)\n   - Hugging Face Spaces (huggingface)\n\n  Accounts are configured interactively during publishing.\n  Manage/remove accounts with: quarto publish accounts\nMore details at https://quarto.org/docs/publishing/"
   },
   {
     "objectID": "3-projects/3-projects.html#quarto-pub",
@@ -596,14 +610,7 @@
     "href": "3-projects/3-projects.html#our-turn-2",
     "title": "Quarto projects for advanced content",
     "section": "Our turn!",
-    "text": "Our turn!\n\n\n\nLet’s publish !\n\n\n\nquarto publish quarto-pub"
-  },
-  {
-    "objectID": "3-projects/3-projects.html#want-to-try-it-yourself",
-    "href": "3-projects/3-projects.html#want-to-try-it-yourself",
-    "title": "Quarto projects for advanced content",
-    "section": "Want to try it yourself ?",
-    "text": "Want to try it yourself ?\nYou need to create an account first at https://quartopub.com/"
+    "text": "Our turn!\n\n\n\nLet’s publish !\n\n\n\nquarto publish quarto-pub\n\n\n\n\n\n\n\n\n\n\nWant to try it yourself ?\n\n\nYou need to create an account first at https://quartopub.com/"
   },
   {
     "objectID": "2-rmd-quarto/2-rmd-quarto.html#get-started-with-quarto",
@@ -666,14 +673,14 @@
     "href": "2-rmd-quarto/2-rmd-quarto.html#yaml-for-cells-options-1",
     "title": "From rmarkdown to quarto to produce documents",
     "section": "YAML for cells options",
-    "text": "YAML for cells options\n```{r}\n#| label: bill-dims-species\n#| fig-width: 5\n#| fig-cap: About penguins\nggplot(\n  penguins,\n  aes(\n    x = bill_length_mm, y = bill_depth_mm,\n    color = species, shape = species\n  )\n) +\n  geom_point() +\n  labs(x = \"Bill length (mm)\", y = \"Bill depth (mm)\")\n```"
+    "text": "YAML for cells options\n```{r}\n#| label: species\n#| fig-width: 5\n#| fig-cap: About penguins\nggplot(\n  penguins,\n  aes(\n    x = bill_length_mm, y = bill_depth_mm,\n    color = species, shape = species\n  )\n) +\n  geom_point() +\n  labs(x = \"Bill length (mm)\", y = \"Bill depth (mm)\")\n```"
   },
   {
     "objectID": "2-rmd-quarto/2-rmd-quarto.html#yaml-for-cells-options-2",
     "href": "2-rmd-quarto/2-rmd-quarto.html#yaml-for-cells-options-2",
     "title": "From rmarkdown to quarto to produce documents",
     "section": "YAML for cells options",
-    "text": "YAML for cells options\n#| label: bill-dims-species\n#| fig-width: 5\n#| fig-cap: About penguins\nQuarto introduces the “hash pipe” in #| - this is the preferred syntax, although Quarto is backwards compatible with the old R Markdown syntax.\n\nConsistency between computation engines (Jupyter/knitr/julia)\nConsistency between YAML header / YAML in cells / Divs options (:::)\nOne option per line, offering autocompletion and validation\n\n\n\n\n\n\n\nNote\n\n\nTechnically, this is constructed as &lt;language-comment-char&gt;| e.g. # for R, Python and Julia but //| for OJS cells as // is the comment char for Javascript."
+    "text": "YAML for cells options\n#| label: species\n#| fig-width: 5\n#| fig-cap: About penguins\nQuarto introduces the “hash pipe” in #| - this is the preferred syntax, although Quarto is backwards compatible with the old R Markdown syntax.\n\nConsistency between computation engines (Jupyter/knitr/julia)\nConsistency between YAML header / YAML in cells / Divs options (:::)\nOne option per line, offering autocompletion and validation\n\n\n\n\n\n\n\nNote\n\n\nTechnically, this is constructed as &lt;language-comment-char&gt;| e.g. # for R, Python and Julia but //| for OJS cells as // is the comment char for Javascript."
   },
   {
     "objectID": "2-rmd-quarto/2-rmd-quarto.html#yaml-for-cells-options-3",
@@ -715,7 +722,7 @@
     "href": "2-rmd-quarto/2-rmd-quarto.html#article-layout",
     "title": "From rmarkdown to quarto to produce documents",
     "section": "Article Layout",
-    "text": "Article Layout\n\n\n\n\nR Markdown\nQuarto\n\n\n\n\nAvailable for HTML with distill (Figure layout) ou tufte (Margin content)\nArticle Layout available for multiple formats and with more flexibility.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBeware of distill to Quarto conversion due to option conflicts!"
+    "text": "Article Layout\n\n\n\n\nR Markdown\nQuarto\n\n\n\n\nAvailable for HTML with distill (Figure layout) ou tufte (Margin content)\nArticle Layout available for multiple formats and with more flexibility.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBeware of distill to Quarto conversion due to option conflicts!"
   },
   {
     "objectID": "2-rmd-quarto/2-rmd-quarto.html#over-to-you-2",
@@ -778,6 +785,6 @@
     "href": "2-rmd-quarto/2-rmd-quarto.html#your-turn",
     "title": "From rmarkdown to quarto to produce documents",
     "section": "Your turn!",
-    "text": "Your turn!\n\n\n\nProduce a PDF with Typst\n\n\n\nChange to format: typst and Render. Look at your shiny new PDF !\nLearm more about Typst at in Quarto’s guide and tweak options.\n\n\n\n\n\n\n\n\n\n\nQuarto 1.5 required\n\n\nYou really need latest Quarto 1.5 for our example to render completely.\n\n\n\n\n\n\n−+\n05:00\n\n\n\nDemo time ! 🕙"
+    "text": "Your turn!\n\n\n\nProduce a PDF with Typst\n\n\n\nChange to format: typst and Render. Look at your shiny new PDF !\nLearm more about Typst at in Quarto’s guide and tweak options.\n\n\n\n\n\n\n\n\n\n\nQuarto 1.5 required\n\n\nYou really need latest Quarto 1.5 for our example to render completely.\n\n\n\n\n\n\n−+\n10:00\n\n\n\nDemo time ! 🕙"
   }
 ]

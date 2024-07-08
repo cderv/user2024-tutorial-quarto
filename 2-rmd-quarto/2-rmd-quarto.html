@@ -517,7 +517,7 @@ Christophe Dervieux
 <h2>Over to you!</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_996a5e56" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d911c6dd" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -531,7 +531,7 @@ Christophe Dervieux
 <div class="callout-content">
 <ol type="1">
 <li>Create a sub-folder in the project e.g.&nbsp;<code>reports</code>.</li>
-<li>Add the <code>.Rmd</code> exercise file named <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.Rmd"><code>penguins.Rmd</code></a> as is.</li>
+<li>Add the <code>.Rmd</code> exercise file named <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/penguins.Rmd"><code>penguins.Rmd</code></a> as is.</li>
 <li>Generate HTML with <code>quarto preview reports/penguins.Rmd</code> in Terminal.</li>
 <li>Generate HTML using the Render button in the IDE.</li>
 </ol>
@@ -596,7 +596,7 @@ Christophe Dervieux
 <section id="yaml-for-cells-options-1" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">YAML for cells options</h2>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource default number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode default hljs"><span id="cb9-1" class="hljs-ln-code"><a></a>```{r}</span>
-<span id="cb9-2" class="hljs-ln-code"><a></a>#| label: bill-dims-species</span>
+<span id="cb9-2" class="hljs-ln-code"><a></a>#| label: species</span>
 <span id="cb9-3" class="hljs-ln-code"><a></a>#| fig-width: 5</span>
 <span id="cb9-4" class="hljs-ln-code"><a></a>#| fig-cap: About penguins</span>
 <span id="cb9-5" class="hljs-ln-code"><a></a>ggplot(</span>
@@ -612,7 +612,7 @@ Christophe Dervieux
 </section>
 <section id="yaml-for-cells-options-2" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">YAML for cells options</h2>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb10-1" class="hljs-ln-code"><a></a><span class="co">#| label: bill-dims-species</span></span>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb10-1" class="hljs-ln-code"><a></a><span class="co">#| label: species</span></span>
 <span id="cb10-2" class="hljs-ln-code"><a></a><span class="co">#| fig-width: 5</span></span>
 <span id="cb10-3" class="hljs-ln-code"><a></a><span class="co">#| fig-cap: About penguins</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Quarto introduces the “hash pipe” in <code>#|</code> - this is the preferred syntax, although Quarto is backwards compatible with the old R Markdown syntax.</p>
@@ -652,7 +652,7 @@ Christophe Dervieux
 <h2>Over to you!</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_5a2e1ab3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_a418cffc" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -837,6 +837,9 @@ Figure&nbsp;1: A schematic representing rendering of Quarto documents from .qmd
 </div>
 </div>
 
+<div class="footer">
+
+</div>
 <aside><div>
 <p>Beware of <strong>distill</strong> to Quarto conversion due to option conflicts!</p>
 </div></aside></section>
@@ -844,7 +847,7 @@ Figure&nbsp;1: A schematic representing rendering of Quarto documents from .qmd
 <h2>Over to you!</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b926c753" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_26fc144c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">15</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -889,6 +892,9 @@ Figure&nbsp;1: A schematic representing rendering of Quarto documents from .qmd
 </div><div class="colum" width="30%">
 
 </div>
+</div>
+<div class="footer">
+
 </div>
 </section></section>
 <section>
@@ -939,6 +945,9 @@ Figure&nbsp;1: A schematic representing rendering of Quarto documents from .qmd
 </section>
 <section id="section" class="slide level2" data-background-video="images/quarto-all-formats.mp4" data-background-video-loop="true" data-background-video-muted="true">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
 <section id="specific-options---ex-html-themes" class="slide level2">
 <h2>Specific options - Ex: HTML Themes</h2>
@@ -1041,9 +1050,9 @@ Figure&nbsp;1: A schematic representing rendering of Quarto documents from .qmd
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_27aad44e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_308ed3eb" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
