@@ -152,6 +152,9 @@ categories:
 
 ## {background-image=images/screenshot-blog.png}
 
+::: footer
+:::
+
 ## Quarto Books
 
 - Inherits Quarto site functionalities (navigation, search, etc.)
@@ -190,6 +193,9 @@ format:
 ```
 
 ##  {background-image="images/screenshot-book-hopr.png"}
+
+::: footer
+:::
 
 ## And much more...
 
@@ -788,7 +794,7 @@ Use the Quarto documentation on the `website` type to play with the options: <ht
 
 # Computations
 
-## When should code be re-run? {#computations-rerun .smaller}
+## When should code be re-run? {#computations-rerun}
 
 ::: incremental
 -   You might have a reason to re-run all code in a Quarto website (every single chunk in every single document) every time you render the website.
@@ -804,24 +810,26 @@ Use the Quarto documentation on the `website` type to play with the options: <ht
 -   `freeze` and `cache` options give you fine control over these decisions
 :::
 
-## Freeze {.smaller}
+## Freeze
 
--   The `freeze` option controls when/if computational documents be re-rendered during a global project render:
-
-```{.yaml style='margin-bottom: 0.5rem'}
+The `freeze` option controls when/if computational documents be re-rendered during a global project render:
+  
+```{.yaml style='margin-bottom: 1rem'}
 execute:
   freeze: true  # never re-render during project render
 ```
 
-```{.yaml style='margin-bottom: 0.5rem'}
+```{.yaml style='margin-bottom: 1rem'}
 execute:
   freeze: auto  # re-render only when source changes
 ```
 
-```{.yaml style='margin-bottom: 0.5rem'}
+```{.yaml style='margin-bottom: 1rem'}
 execute:
   freeze: false  # always re-render (default)
 ```
+
+## Freeze
 
 -   The `freeze` option is typically added to a `_metadata.yml` file within a specific directory, affecting all files in that directory. [Shared Metadata](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata)
 
@@ -840,7 +848,7 @@ execute:
 - `cache` can also be set at the chunk level. Consider using the cache for computationally expensive chunks.
 
 
-## Freeze vs. cache {#freeze-cache .smaller}
+## Freeze vs. cache {#freeze-cache-1}
 
 - Freeze option is typically set
 
@@ -852,6 +860,8 @@ execute:
 execute: 
   freeze: auto
 ```
+
+## Freeze vs. cache {#freeze-cache-2}
 
 - Cache option is typically set for a given file or for individual chunk(s) in a file.
 
@@ -894,7 +904,7 @@ Rendering project can be done as a whole, or per document, learn more at: <https
 ❯ quarto publish --help
 
 Usage:   quarto publish [provider] [path]
-Version: 1.5.52
+Version: 1.5.53
 
 Description:
 
@@ -928,7 +938,7 @@ quarto publish quarto-pub
 
 -   Gain a `_publish.yml` that is safe to check into version control.
 
-## Our turn! {.hidden}
+## Our turn!
 
 ::: {.callout}
 
@@ -937,7 +947,7 @@ quarto publish quarto-pub
 1. `quarto publish quarto-pub`
 :::
 
-::: {.callout-info}
+::: {.callout-note}
 
 ## Want to try it yourself ?
 

@@ -172,7 +172,7 @@ ggplot(
 
 ````{verbatim}
 ```{r}
-#| label: bill-dims-species
+#| label: species
 #| fig-width: 5
 #| fig-cap: About penguins
 ggplot(
@@ -190,7 +190,7 @@ ggplot(
 ## YAML for cells options {auto-animate="true"}
 
 ``` yaml
-#| label: bill-dims-species
+#| label: species
 #| fig-width: 5
 #| fig-cap: About penguins
 ```
@@ -342,6 +342,9 @@ Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel
 Beware of **distill** to Quarto conversion due to option conflicts!
 :::
 
+::: footer
+:::
+
 ## Over to you!
 
 ```{r}
@@ -374,6 +377,9 @@ You can start from your previous document, or download a fresh version from [Tut
 :::
 ::: {.colum width=30%}
 :::
+:::
+
+::: footer
 :::
 
 # Quarto formats
@@ -419,6 +425,9 @@ toc: true #<2>
 ## ...based on Pandoc
 
 ##  {background-video="images/quarto-all-formats.mp4" background-video-loop="true" background-video-muted="true"}
+
+::: footer
+:::
 
 ## Specific options - Ex: HTML Themes
 
@@ -506,7 +515,7 @@ You really need latest Quarto 1.5 for our example to render completely.
 
 ```{r}
 #| echo: false
-countdown(minutes = 5)
+countdown(minutes = 10)
 ```
 
 #### Demo time ! 🕙 {.fragment}
