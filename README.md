@@ -11,9 +11,9 @@ Setting up your environment:
 
 - Download and install the latest versions of R, RStudio and Quarto:
 
-  - A recent version of R (4.4 or higher):
+  - A recent version of R (4.4 or higher)
 
-  - The latest version of RStudio (`2024.04.2-764` or higher):
+  - The latest version of RStudio (`2024.04.2-764` or higher)
 
   - The latest version of Quarto `1.5` available at
     <https://quarto.org/docs/download/>
@@ -38,7 +38,7 @@ If you prefer to have the files locally in advance:
   computer. You will be able to simply copy and paste the files you need
   throughout the tutorial.
 
-- Download [`correction-examples.zip`](correction-examples.zip). **This
+- Download [`examples-correction.zip`](examples-correction.zip). **This
   is the equivalent of exercise solutions - Do not look in advance if
   you really want to practice on the day**. This compressed folder
   contains various resources used as examples and demonstrations. Unzip

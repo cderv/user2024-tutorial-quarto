@@ -3,6 +3,6 @@ If you prefer to have the files locally in advance:
 - Download [`exercises.zip`](exercises.zip).
   This compressed folder contains various resources that may be useful for the exercises. Unzip it on your desktop or in a location that you can easily locate on your computer. You will be able to simply copy and paste the files you need throughout the tutorial.
 
-- Download [`correction-examples.zip`](correction-examples.zip).
+- Download [`examples-correction.zip`](examples-correction.zip).
   **This is the equivalent of exercise solutions - Do not look in advance if you really want to practice on the day**.
   This compressed folder contains various resources used as examples and demonstrations. Unzip it on your desktop or in a location that you can easily locate on your computer. You will be able to simply copy and paste the files you need throughout the tutorial.
