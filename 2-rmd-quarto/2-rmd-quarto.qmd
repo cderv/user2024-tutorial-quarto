@@ -114,7 +114,7 @@ countdown(minutes = 2)
 # Add to the project
 
 1.  Create a sub-folder in the project e.g. `reports`.
-2.  Add the `.Rmd` exercise file named [`penguins.Rmd`](https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.Rmd) as is.
+2.  Add the `.Rmd` exercise file named [`penguins.Rmd`](https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/penguins.Rmd) as is.
 3.  Generate HTML with `quarto preview reports/penguins.Rmd` in Terminal.
 4.  Generate HTML using the Render button in the IDE.
 :::

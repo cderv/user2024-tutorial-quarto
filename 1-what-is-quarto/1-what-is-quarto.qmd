@@ -85,12 +85,11 @@ countdown(minutes= 1, seconds = 0)
 
 ### Getting help
 
-- During non-exercise parts, or during transitions - raise your hand {{< fa hand >}}
+Let's benefit from being small room !
 
-- During the exercises -- {{< fa hand >}}, but also use the stickers to signal you :
+- During non-exercise parts, or during transitions - raise your hand {{< fa hand >}}, and I'll answer question for all.
 
-    - [Pink]{.fg style="--col: pink"}: I need help!
-    - [Blue]{.fg style="--col: blue"}: I'm done!
+- During the exercises -- {{< fa hand >}} too, and I'll come help you.
 
 ::: notes
 
@@ -214,7 +213,7 @@ Quarto is a command line interface (CLI) that renders plain text formats (`.qmd`
 $ quarto --help
 
   Usage:   quarto
-  Version: 1.5.52
+  Version: 1.5.53
 
   Description:
 
@@ -292,11 +291,14 @@ quarto_render("document.qmd", output_format = "pdf")
 How it works => The **quarto** R {{< fa box >}} calls `quarto` CLI from R through **processx** package.
 :::
 
+::: footer
+:::
+
 # Overview of Quarto formats
 
 ## One install, "Batteries included"
 
--   RMarkdown grew into a large ecosystem, with **varying syntax**.
+-   R Markdown grew into a large ecosystem, with **varying syntax**.
 
 . . .
 
@@ -378,13 +380,14 @@ countdown(minutes = 5)
 
 1. Open RStudio 
 2. Move to a blank folder (or wherever you like)
-3. Create a new Quarto document - you can call it `simple-document.qmd`.
+3. Create a new Quarto document using File > New File... menu 
+     - you can call it `simple-document.qmd`.
 4. Render the document
 5. Check source editor and visual editor
 :::
 
 ::: callout-tip
-`simple-document.qmd` is available for [download](/1-quarto-kesako/#exercises) if required
+`simple-document.qmd` is available for [download](https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/simple-document.qmd) if required.
 :::
 
 # Questions?

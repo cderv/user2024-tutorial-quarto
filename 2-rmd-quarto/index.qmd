@@ -15,12 +15,16 @@ format: html
 
 ## Exercises
 
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/quarto-101.zip">{{< fa download >}} `quarto-101.zip`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/penguins.Rmd">{{< fa download >}} `penguins.Rmd`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/new-penguins.qmd">{{< fa download >}} `new-penguins.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/quarto-101.zip">{{< fa download >}} `quarto-101.zip`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/penguins.Rmd">{{< fa download >}} `penguins.Rmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/new-penguins.qmd">{{< fa download >}} `new-penguins.qmd`</i></a>
+  
+(_For the above, do right click > save link under..._ )
 
 ## Demo / Correction of examples
 
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-pdf-demo.qmd">{{< fa download >}} `new-penguins-pdf-demo.qmd`</i></a>
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/examples-correction/new-penguins-pdf-demo-typst.qmd">{{< fa download >}} `new-penguins-pdf-demo-typst.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/examples-correction/new-penguins-complete-example-correct.qmd">{{< fa download >}} `new-penguins-complete-example-correct.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/examples-correction/new-penguins-pdf-demo.qmd">{{< fa download >}} `new-penguins-pdf-demo.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/examples-correction/new-penguins-pdf-demo-typst.qmd">{{< fa download >}} `new-penguins-pdf-demo-typst.qmd`</i></a>
+
+(_For the above, do right click > save link under..._ )
