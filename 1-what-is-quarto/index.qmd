@@ -15,4 +15,4 @@ format: html
 
 ## Exercises
 
--   <a href="https://raw.githubusercontent.com/cderv/tuto-quarto-user-2024/main/exercises/simple-document.qmd">{{< fa download >}} `simple-document.qmd`</i></a>
+-   <a href="https://raw.githubusercontent.com/cderv/user2024-tutorial-quarto/main/exercises/simple-document.qmd">{{< fa download >}} `simple-document.qmd`</i></a>
